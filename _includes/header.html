@@ -8,23 +8,23 @@
     </h1>
     <nav id="nav">
       <ul class="content">
-        <li class="current">
-          <a href="#">Overview</a>
+        <li{% if page.body_class == 'overview' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/">Overview</a>
         </li>
-        <li>
-          <a href="#">Your Trainers</a>
+        <li{% if page.body_class == 'trainers' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/trainers">Your Trainers</a>
         </li>
-        <li>
-          <a href="#">Web-based Training</a>
+        <li{% if page.body_class == 'web' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/web">Web-based Training</a>
         </li>
-        <li>
-          <a href="#">On-site Training</a>
+        <li{% if page.body_class == 'onsite' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/onsite">On-site Training</a>
         </li>
-        <li>
-          <a href="#">Free Resources</a>
+        <li{% if page.body_class == 'free' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/free">Free Resources</a>
         </li>
-        <li>
-          <a href="#">Contact</a>
+        <li{% if page.body_class == 'contact' %} class="current"{% endif %}>
+          <a href="{{ site.url }}/contact">Contact</a>
         </li>
       </ul>
     </nav>

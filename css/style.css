@@ -145,8 +145,9 @@ footer .content {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-.home .hero ul {
-  font-size: 13px;
+.hero h2 {
+  font-size: 2.5em;
+  margin: 0;
 }
 
 /* HTML Elements */
