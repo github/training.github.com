@@ -1,5 +1,162 @@
+@import "normalize.css";
+@import "grid.css" screen and (min-width: 601px);
+@import "grid-fluid.css" screen and (min-width: 601px) and (max-width: 960px);
+
+/* General */
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 21px;
+  border-top: 3px solid #1ebe1a;
+}
+
+header, section, footer {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Header */
+
+#logo {
+  font-size: 1em;
+  margin: 0;
+}
+
+#logo span {
+  display: none;
+}
+
+header {
   text-align: center;
 }
+
+header .container {
+  padding: 20px 0;
+}
+
+header .content {
+  padding: 0px 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  margin: .4em .5em;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 0 .3em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+}
+
+#nav li a:hover {
+  color: #222;
+  border-bottom-color: #ddd;
+}
+
+#nav li.current a, #nav li.current a:hover {
+  color: #222;
+  border-bottom-color: #1ebe1a;
+}
+
+@media screen and (min-width: 960px) {
+  #logo {
+    float: left;
+    width: 20%;
+  }
+  #nav {
+    float: right;
+    width: 75%;
+    margin-top: 2px;
+    text-align: right;
+  }
+  header .content {
+    padding: 0 20px;
+  }
+  header {
+    text-align: left;
+  }
+}
+
+/* Footer */
+
+footer {
+  background: #1ebe1a;
+  color: #fff;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+#footerlogo {
+  float: left;
+  margin-right: 15px;
+}
+
+footer p {
+  margin: 12px 0;
+  /*font-weight: 300;*/
+  font-size: 14px;
+  color: #c2ffaf;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .content {
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 320px) {
+  #footerlogo {
+    float: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p {
+    margin-top: 5px;
+  }
+}
+
+/* Hero Block */
+
+.hero {
+  background: #1ebe1a;
+  color: #fff;
+  box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.home .hero ul {
+  font-size: 13px;
+}
+
+/* HTML Elements */
+
+a {
+  color: #1ebe1a;
+  -webkit-transition: all .25s;
+}
+
+ul {
+  padding-left: 20px;
+}
+

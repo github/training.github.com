@@ -1,0 +1,69 @@
+/*
+-----------------------------------------------
+Sections Grid CSS - Fluid
+-----------------------------------------------
+file:   css/text.css
+author:   Stephen Bau
+date:   2 July 2010
+-----------------------------------------------
+This
+http://markuplibrary.org/
+-----------------------------------------------
+*/
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section {
+  overflow: hidden;
+  clear: both;
+}
+.subsection {
+  float: left;
+  width: 240px;
+}
+
+/* 3-column grid */
+.thirds .subsection,
+.thirds .simple {
+  width: 320px;
+}
+.thirds .fragment {
+  width: 160px;
+}
+.thirds .compound {
+  width: 640px;
+}
+
+/* 4-column grid (default) */
+.fragment {
+  width: 120px;
+}
+.simple {
+  width: 240px;
+}
+.compound {
+  width: 480px;
+}
+.complex {
+  width: 720px;
+}
+
+/* 5-column grid */
+.fifths .subsection,
+.fifths .simple {
+  width: 192px;
+}
+.fifths .fragment {
+  width: 96px;
+}
+.fifths .compound {
+  width: 384px;
+}
+.fifths .complex {
+  width: 576px;
+}
+.fifths .compound-complex {
+  width: 768px;
+}
