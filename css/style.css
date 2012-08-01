@@ -21,6 +21,14 @@ header, section, footer {
   padding: 20px;
 }
 
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+section.main {
+  padding: 30px 0;
+}
+
 /* Header */
 
 #logo {
@@ -98,8 +106,8 @@ nav ul {
 /* Footer */
 
 footer {
-  background: #1ebe1a;
-  color: #fff;
+  background: #222;
+  color: #999;
   box-shadow: inset 0 1px 5px rgba(0,0,0,.5);
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -111,9 +119,7 @@ footer {
 
 footer p {
   margin: 12px 0;
-  /*font-weight: 300;*/
   font-size: 14px;
-  color: #c2ffaf;
 }
 
 footer p a {
@@ -139,19 +145,33 @@ footer .content {
 
 /* Buttons */
 
-.button {
-  background: #11550f;
+.button, .mini-button {
+  background-color: #07c;
+  background-image: url(../img/grad_white.png);
+  background-repeat: repeat-x;
   color: #fff;
   padding: .5em .8em .55em;
   display: inline-block;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 3px rgba(0,0,0,.3);
-  border: 1px solid #0f4b0d;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 3px rgba(0,0,0,.3);
+  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+  border: 1px solid rgba(0,0,0,.3);
 }
 
-.button:hover {
-  background: #0a3708;
+.button:hover, .mini-button:hover {
+  background-color: #09c;
 }
+
+.mini-button {
+  font-size: 13px;
+}
+
+.button + .button {
+  margin-left: 15px;
+}
+
+.green { background-color: #11550f; }
+.green:hover { background-color: #0a3708; }
 
 /* Hero Block */
 
@@ -191,7 +211,7 @@ footer .content {
   float: right;
   position: relative;
   width: 400px;
-  height: 200px;
+  height: 250px;
   overflow: visible;
 }
 
@@ -288,8 +308,6 @@ ul {
   padding-left: 20px;
 }
 
-section.main {
-  min-height: 600px;
+h3 {
+  margin: 0;
 }
-
-
