@@ -274,19 +274,44 @@ footer .content {
   font-size: 12px;
 }
 
+/* Trainers */
+
+.trainer img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.trainer .social a {
+  position: relative;
+  padding-left: 21px;
+  margin-right: 10px;
+}
+
+.trainer a:before, .trainer .github:before {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.trainer .twitter:before {
+  background: url(../img/twitter-icon.png) top left no-repeat;
+  background-size: 16px 16px;
+}
+
+.trainer .github:before {
+  background: url(../img/octocat-icon.png) top left no-repeat;
+  background-size: 16px 16px;
+}
+
 /* Content Formatting */
 
 p.more {
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 480px) {
-  .main .subsection {
-    border-bottom: 1px solid #eee;
-  }
-  .main .section:last-child .subsection:last-child {
-    border-bottom: none;
-  }
 }
 
 /* HTML Elements */
@@ -304,7 +329,11 @@ ul {
   padding-left: 20px;
 }
 
-h3 {
+.main h2 {
+  color: #333;
+}
+
+.main h3 {
   margin: 0;
   color: #333;
   font-size: 1.2em;
