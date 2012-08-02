@@ -1,2 +1,3 @@
 auto: true
 server: true
+exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
