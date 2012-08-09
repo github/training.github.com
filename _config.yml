@@ -2,3 +2,4 @@ auto: true
 server: true
 exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
 gauges_id: 50235916613f5d4f9c000042
+google_analytics_id: UA-3769691-19
