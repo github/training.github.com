@@ -6,7 +6,7 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-top: 3px solid #1ebe1a;
+  /*border-top: 4px solid #0383c0;*/
   color: #555;
   font-size: 14px;
   line-height: 1.6em;
@@ -39,12 +39,41 @@ section.main {
   display: none;
 }
 
+#logo img {
+  transition: all .25s;
+}
+
+#logo img.hover {
+  display: none;
+}
+
+#logo:hover img.normal {
+  display: none;
+}
+
+#logo:hover img.hover {
+  display: inline-block;
+}
+
+.top-bar {
+  background: #0383c0;
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#0383c0), color-stop(100%,#03599f));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.3), inset 0 -1px 0 rgba(0,0,0,.2);
+  display: block;
+  height: 6px;
+}
+
 header {
   text-align: center;
+  background: #f7f7f7;
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#e0f4ff), color-stop(100%,#c3d0ea));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
 }
 
 header .container {
-  padding: 32px 0;
+  padding: 21px 0 16px;
 }
 
 header .content {
@@ -59,28 +88,34 @@ nav ul {
 
 #nav li {
   display: inline-block;
-  margin: .4em .5em;
+  margin: .4em .15em;
 }
 
 #nav li a {
   text-decoration: none;
-  color: #666;
+  color: #718ba8;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   padding: 0 0 .3em;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #fff;
+  padding: .3em .6em .4em;
+  border-radius: 5px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.9);
 }
 
 #nav li a:hover {
-  color: #222;
-  border-bottom-color: #ddd;
+  color: #02a2ee;
+  /*box-shadow: inset 0 1px 3px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.3);*/
 }
 
 #nav li.current a, #nav li.current a:hover {
-  color: #222;
-  border-bottom-color: #1ebe1a;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  border-bottom-color: #0383c0;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.2),
+    0 1px 0 rgba(255,255,255,.5);
+  background: #a1b7d7;
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#52a7d7), color-stop(100%,#82b5e5));
 }
 
 @media screen and (min-width: 960px) {
@@ -105,7 +140,7 @@ nav ul {
 /* Footer */
 
 footer {
-  background: #42433e url(../img/blackboard.jpg) top left repeat;
+  background: #223443;
   color: #bbb;
   box-shadow: inset 0 1px 15px rgba(0,0,0,.9);
   text-shadow: 0 1px 3px rgba(0,0,0,.9);
@@ -175,7 +210,7 @@ footer .content {
 /* Hero Block */
 
 .hero {
-  background: #42433e url(../img/blackboard.jpg) top left repeat;
+  background: #42433e url(../img/blackboard-blueish.png) top left repeat;
   color: #fff;
   box-shadow: inset 0 1px 15px rgba(0,0,0,.9);
   text-shadow: 0 1px 3px rgba(0,0,0,.9);
@@ -317,7 +352,7 @@ p.more {
 /* HTML Elements */
 
 a {
-  color: #0b0;
+  color: #0383c0;
   text-decoration: none;
   transition: all .25s;
   -moz-transition: all .25s;
