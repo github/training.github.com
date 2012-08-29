@@ -247,7 +247,10 @@ footer .content {
   color: #9e7300;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,.1),
+    inset 0 1px 0 rgba(255,255,255,.6);
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#fffab4), color-stop(100%,#fff799));
   border: 1px solid #e5cd62;
   position: relative;
 }
@@ -260,7 +263,7 @@ footer .content {
   width: 0;
   position: absolute;
   bottom: -20px;
-  left: 10px;
+  left: 257px;
 }
 
 .testimonial .quote .pointer {
@@ -271,12 +274,13 @@ footer .content {
   width: 0;
   position: absolute;
   bottom: -19px;
-  left: 10px;
+  left: 257px;
 }
 
 .testimonial .quote p {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
+  text-align: center;
   line-height: 1.5em;
   font-family: Georgia, serif;
   font-style: italic;
@@ -284,7 +288,8 @@ footer .content {
 }
 
 .testimonial .author {
- margin: 15px 0;
+  margin: 15px 0;
+  text-align: center;
 }
 
 .testimonial .author img {
