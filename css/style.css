@@ -412,14 +412,22 @@ footer .content {
   position: relative;
   padding-left: 21px;
   margin-right: 10px;
+  padding: 7px 10px 7px 32px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2),
+    0 1px 3px rgba(0,0,0,.1),
+    inset 0 -1px 0px rgba(0,0,0,.1);
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  font-weight: 800;
+  font-size: 12px;
 }
 
 .trainer a:before, .trainer .github:before {
   content: "";
   float: left;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 6px;
+  left: 10px;
   width: 16px;
   height: 16px;
 }
@@ -432,6 +440,17 @@ footer .content {
 .trainer .github:before {
   background: url(../img/octocat-icon.png) top left no-repeat;
   background-size: 16px 16px;
+}
+
+.trainer .twitter {
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#e0f4ff), color-stop(100%,#b1c7ea));
+}
+
+.trainer .github {
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#efefef), color-stop(100%,#c7c7c7));
+  color: #363636;
 }
 
 /* Content Formatting */
