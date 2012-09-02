@@ -249,11 +249,24 @@ footer .content {
   margin: .83em 0;
 }
 
+.overview .intro, .overview .images {
+  float: left;
+}
+
 .overview .images {
   position: relative;
   top: -10px;
-  float: right;
-  width: 400px;
+  overflow: visible;
+  height: 260px;
+}
+
+@media screen and (min-width: 960px){
+  .overview .images {
+    width: 460px;
+  }
+  .overview .intro {
+    width: 500px;
+  }
 }
 
 .overview .images img {
@@ -277,6 +290,35 @@ footer .content {
   left: 20px;
   -webkit-transform: rotate(-5deg);
 }
+
+@media screen and (max-width: 959px){
+  .overview .images, .overview .intro {
+    text-align: center;
+    width: 100%;
+  }
+  .overview .images {
+    width: 10%;
+    margin: 0 auto;
+    float: none;
+  }
+  .overview .images img.first {
+    left: -50px;
+  }
+  .overview .images img.second{
+    left: -185px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .overview .images {
+    height: 200px;
+  }
+  .overview .images img {
+    width: 250px;
+    height: 166px;
+  }
+}
+
 
 /* Testimonial */
 
