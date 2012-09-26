@@ -9,22 +9,34 @@ byline: Lots of <strong>free and open source</strong> resources for <strong>you<
   <div class="subpage-list">
     <ul>
       <li{% if page.subpage == 'classes' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/free">Free Classes</a>
+        <a href="{{ site.url }}/free/classes">Free Git Classes</a>
       </li>
       <li{% if page.subpage == 'videos' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/free/videos">Videos</a>
+        <a href="{{ site.url }}/free/videos">Free Videos</a>
       </li>
       <li{% if page.subpage == 'books' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/free/books">Books</a>
+        <a href="{{ site.url }}/free/books">Free Git Books</a>
       </li>
       <li{% if page.subpage == 'repos' %} class="current"{% endif %}>
         <a href="{{ site.url }}/free/repositories">GitHub Repositories</a>
       </li>
       <li{% if page.subpage == 'other' %} class="current"{% endif %}>
-        <a href="{{ site.url }}/free/other">Tutorials, Articles, and Downloads</a>
+        <a href="{{ site.url }}/free/other">More Free Resources</a>
       </li>
     </ul>
   </div>
 </div>
 
-{{ content }}
+<div class="container">
+  <div class="three-quarters">
+    {{ content }}
+  </div>
+  <div class="quarter">
+    <div class="content">
+      <div class="help-box">
+        <h4>GitHub Help</h4>
+        <p>GitHub’s <a href="http://help.github.com" target=_blank>help website</a> is an excellent resource to keep bookmarked. It covers a range of Git topics from basic setup, all the way through to advanced topics.</p>
+      </div>
+    </div>
+  </div>
+</div>

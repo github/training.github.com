@@ -3,10 +3,22 @@ layout: free
 subpage: books
 ---
 
-<ul>
-  {% for book in site.categories.books %}
-    <li>
-      {{ book.title }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="quarter">
+    <div class="content category-description">
+      <h3>Free Git Books</h3>
+      <p>There are a number of excellent books written about Git that are available for free. Here’s a list of some of the most popular ones.</p>
+    </div>
+  </div>
+  <div class="three-quarters">
+    <div class="content">
+      <ul>
+         {% for book in site.categories.books %}
+           <li>
+             {{ book.title }}
+           </li>
+         {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

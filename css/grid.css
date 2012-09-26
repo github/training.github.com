@@ -12,6 +12,10 @@
   }
 }
 
+.container .container {
+  width: 100%;
+}
+
 .container .whole,
 .container .half,
 .container .third,

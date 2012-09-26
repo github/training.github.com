@@ -3,10 +3,22 @@ layout: free
 subpage: other
 ---
 
-<ul>
-  {% for resource in site.categories.other %}
-    <li>
-      {{ resource.title }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="quarter">
+    <div class="content category-description">
+      <h3>Other Git Resources</h3>
+      <p>There are a number of excellent Git resources that don’t really fit into any of the other categories. Here’s a list of some of the most popular ones.</p>
+    </div>
+  </div>
+  <div class="three-quarters">
+    <div class="content">
+      <ul>
+         {% for resource in site.categories.other %}
+           <li>
+             {{ resource.title }}
+           </li>
+         {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

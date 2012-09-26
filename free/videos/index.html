@@ -3,15 +3,21 @@ layout: free
 subpage: videos
 ---
 
-<div class="category-description">
-  <h3>Free Git Videos</h3>
-  <p>GitHub has produced several free educational screencasts on using features of Git and GitHub.com, and there’s also a number of other sites with great free video content too.</p>
+<div class="container">
+  <div class="content">
+    <div class="category-description">
+      <h3>Free Git Videos</h3>
+      <p>GitHub has produced several free educational screencasts on using features of Git and GitHub.com, and there’s also a number of other sites with great free video content too.</p>
+    </div>
+    <ul class="resource-list class-list">
+      {% for video in site.categories.videos %}
+        <li class="resource video">
+          <div class="container">
+            <a href="{{ video.the_url }}">{{ video.title }}</a>
+            <p class="body">{{ video.content }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-
-<ul>
-  {% for video in site.categories.videos %}
-    <li>
-      {{ video.title }}
-    </li>
-  {% endfor %}
-</ul>

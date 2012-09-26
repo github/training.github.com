@@ -503,9 +503,35 @@ ul {
 
 .subpage-list li a {
   padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
-.subpage-list li.current a {
-  background: #0bf;
+.subpage-list li.current a,
+.subpage-list li.current a:hover {
+  background: #0383C0;
   color: #fff;
 }
+
+.subpage-list li a:hover {
+  background: #eee;
+}
+
+.resource-list {
+  padding: 0;
+  list-style: none;
+}
+
+.resource {
+  margin-bottom: 30px;
+}
+
+.resource h4,
+.resource p {
+  margin: 0;
+}
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }

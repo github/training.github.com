@@ -3,10 +3,23 @@ layout: free
 subpage: repos
 ---
 
-<ul>
-  {% for repo in site.categories.repositories %}
-    <li>
-      {{ repo.title }}
-    </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="quarter">
+    <div class="content category-description">
+      <h3>GitHub Repositories</h3>
+      <p>The GitHub Training team releases many of its training repos into the public domain. The most requested, along with some highly recommended ones are listed here.</p>
+      {% include help_box.html %}
+    </div>
+  </div>
+  <div class="three-quarters">
+    <div class="content">
+      <ul>
+         {% for repo in site.categories.repositories %}
+           <li>
+             {{ repo.title }}
+           </li>
+         {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
