@@ -4,21 +4,20 @@ subpage: other
 ---
 
 <div class="container">
-  <div class="quarter">
-    <div class="content category-description">
+  <div class="content">
+    <div class="category-description">
       <h3>Other Git Resources</h3>
       <p>There are a number of excellent Git resources that don’t really fit into any of the other categories. Here’s a list of some of the most popular ones.</p>
     </div>
-  </div>
-  <div class="three-quarters">
-    <div class="content">
-      <ul>
-         {% for resource in site.categories.other %}
-           <li>
-             {{ resource.title }}
-           </li>
-         {% endfor %}
-      </ul>
-    </div>
+    <ul class="resource-list other-list">
+      {% for resource in site.categories.other %}
+        <li class="resource other">
+          <div class="container">
+            <a href="{{ resource.the_url }}">{{ resource.title }}</a>
+            <p class="body">{{ resource.content }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

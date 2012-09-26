@@ -4,21 +4,20 @@ subpage: books
 ---
 
 <div class="container">
-  <div class="quarter">
-    <div class="content category-description">
+  <div class="content">
+    <div class="category-description">
       <h3>Free Git Books</h3>
       <p>There are a number of excellent books written about Git that are available for free. Here’s a list of some of the most popular ones.</p>
     </div>
-  </div>
-  <div class="three-quarters">
-    <div class="content">
-      <ul>
-         {% for book in site.categories.books %}
-           <li>
-             {{ book.title }}
-           </li>
-         {% endfor %}
-      </ul>
-    </div>
+    <ul class="resource-list book-list">
+      {% for book in site.categories.books %}
+        <li class="resource book">
+          <div class="container">
+            <a href="{{ book.the_url }}">{{ book.title }}</a>
+            <p class="body">{{ book.content }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
