@@ -1,0 +1,12 @@
+---
+layout: free
+subpage: books
+---
+
+<ul>
+  {% for book in site.categories.books %}
+    <li>
+      {{ book.title }}
+    </li>
+  {% endfor %}
+</ul>

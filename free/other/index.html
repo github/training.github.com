@@ -1,0 +1,12 @@
+---
+layout: free
+subpage: other
+---
+
+<ul>
+  {% for resource in site.categories.other %}
+    <li>
+      {{ resource.title }}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,12 @@
+---
+layout: free
+subpage: repos
+---
+
+<ul>
+  {% for repo in site.categories.repositories %}
+    <li>
+      {{ repo.title }}
+    </li>
+  {% endfor %}
+</ul>
