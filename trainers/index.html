@@ -5,28 +5,25 @@ title: Meet your trainers
 byline: Meet the people who will help you <strong>succeed</strong>.
 ---
 
-<div class="fifths">
-  {% for trainer in site.categories.trainers %}
-    <div class="trainer section">
-      <div class="subsection simple">
-        <div class="content">
-          <img src="{{ trainer.avatar_url }}" alt="">
-        </div>
+{% for trainer in site.categories.trainers %}
+  <div class="trainer section">
+    <div class="fifth">
+      <div class="content">
+        <img src="{{ trainer.avatar_url }}" alt="">
       </div>
-      <div class="subsection compound-complex">
-        <div class="content">
-          <h2>{{ trainer.name }}</h2>
-          <p class="social">
-            <a href="https://github.com/{{ trainer.github }}" class="github">@{{ trainer.github }}</a>
-            <a href="http://twitter.com/{{ trainer.twitter }}" class="twitter">@{{ trainer.twitter }}</a>
-          </p>
-          <p class="bio">{{ trainer.content }}</p>
-          <div class="trainer-testimonial">
-            <p class="quote">“{{ trainer.testimonial }}”</p>
-            <p class="author">—{{ trainer.testimonial_author }}</p>
-          </div>
+    </div>
+    <div class="four-fifths">
+      <div class="content">
+        <h2>{{ trainer.name }}</h2>
+        <p class="social">
+          <a href="https://github.com/{{ trainer.github }}" class="github">@{{ trainer.github }}</a>
+          <a href="http://twitter.com/{{ trainer.twitter }}" class="twitter">@{{ trainer.twitter }}</a>
+        </p>
+        <p class="bio">{{ trainer.content }}</p>
+        <div class="trainer-testimonial">
+          <p class="quote">“{{ trainer.testimonial }}”</p>
+          <p class="author">—{{ trainer.testimonial_author }}</p>
         </div>
       </div>
     </div>
   {% endfor %}
-</div>

@@ -20,16 +20,12 @@ This uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layo
 
 ## CSS Grid
 
-The responsive CSS grid that’s being used here is one I’m trialling based on [this responsive grid](http://markuplibrary.org/templates/grids/) which was done by [Craig Zheng](http://getsymphony.com/get-involved/member/czheng/) for [Markup Library](http://markuplibrary.org/).
-
-The one on this site works essentially the same, with a couple of small caveats. Here’s all you need to know to use the grid:
+The CSS grid that’s being used here is based on [one I’m experimenting with](https://github.com/cobyism/gridism). The one on this site works essentially the same, with a couple of small differences. Here’s all you need to know to use the grid:
 
 - Each horizontal section of the page (100% browser width) will either be a `<header>`, `<section>`, or `<footer>` tag.
 - Within any horizontal page section, a `<div class="container">` will be a wrapped, centered row.
-- Within any container, you can use <div class="simple|compound|complex|compound-complex|fragment"> to control column widths.
+- Within any container, you can use <div class="whole|half|quarter|three-quarters|fifth|two-fifths|three-fifths|four-fifths|golden-large|golden-small"> to control column widths.
 - Within any column `<div>` you can put a `class="content"` to give the column some padding so it has breathing space between other columns.
-- If you want to change the container partitions from fourths (the default) to fifths or thirds, put as an extra class on the container — i.e. `<div class="fifths|thirds">`.
-- The various column widths (simple, compound, complex, compound-complex, and fragment), will give you different column widths depending on whether the container is set to fourths (no extra class), fifths, or thirds. See [the Markup Library grid reference](http://markuplibrary.org/templates/grids/) for the variations possible.
 
 If you have any questions for how this all works, drop me ([@cobyism](https://github.com/cobyism)) a line.
 

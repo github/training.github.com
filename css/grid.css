@@ -1,69 +1,72 @@
-/*
------------------------------------------------
-Sections Grid CSS - Fluid
------------------------------------------------
-file:   css/text.css
-author:   Stephen Bau
-date:   2 July 2010
------------------------------------------------
-This
-http://markuplibrary.org/
------------------------------------------------
-*/
+/* Grid */
+
 .container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
 }
-.section {
-  overflow: hidden;
-  clear: both;
+
+@media screen and (max-width: 960px){
+  .container {
+    width: auto;
+  }
 }
-.subsection {
+
+.container .whole,
+.container .half,
+.container .third,
+.container .two-thirds,
+.container .golden-small,
+.container .golden-large,
+.container .quarter,
+.container .three-quarters,
+.container .fifth,
+.container .two-fifths,
+.container .three-fifths,
+.container .four-fifths
+{
   float: left;
-  width: 240px;
 }
 
-/* 3-column grid */
-.thirds .subsection,
-.thirds .simple {
-  width: 320px;
-}
-.thirds .fragment {
-  width: 160px;
-}
-.thirds .compound {
-  width: 640px;
-}
+.container .whole           { width: 100%; }
+.container .half            { width: 50%; }
+.container .third           { width: 33.3333%; }
+.container .two-thirds      { width: 66.6666%; }
+.container .golden-small    { width: 38.2716%; }
+.container .golden-large    { width: 61.7283% }
+.container .quarter         { width: 25%; }
+.container .three-quarters  { width: 75%; }
+.container .fifth           { width: 20%; }
+.container .two-fifths      { width: 40%; }
+.container .three-fifths    { width: 60%; }
+.container .four-fifths     { width: 80%; }
 
-/* 4-column grid (default) */
-.fragment {
-  width: 120px;
-}
-.simple {
-  width: 240px;
-}
-.compound {
-  width: 480px;
-}
-.complex {
-  width: 720px;
-}
+@media screen and (max-width: 480px) {
 
-/* 5-column grid */
-.fifths .subsection,
-.fifths .simple {
-  width: 192px;
-}
-.fifths .fragment {
-  width: 96px;
-}
-.fifths .compound {
-  width: 384px;
-}
-.fifths .complex {
-  width: 576px;
-}
-.fifths .compound-complex {
-  width: 768px;
+  /* Expand anything lower than .whole to full-width on smaller screens */
+  .container .half,
+  .container .third,
+  .container .two-thirds,
+  .container .golden-small,
+  .container .golden-large,
+  .container .quarter,
+  .container .three-quarters,
+  .container .fifth,
+  .container .two-fifths,
+  .container .three-fifths,
+  .container .four-fifths {
+    width: 100%;
+  }
+
+  /* ... and give them some better margins */
+  .container .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* Sometimes, you want things centered on small screens */
+  .center-on-mobiles {
+    text-align: center !important;
+  }
+
 }
