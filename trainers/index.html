@@ -15,57 +15,29 @@ body_class: trainers
 </section>
 <section class="main">
   <div class="container fifths">
-    <div class="trainer section">
-      <div class="subsection simple">
-        <div class="content">
-          <img src="https://secure.gravatar.com/avatar/9112400090829f79d97ed9b12056fa4f?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="">
+    {% for trainer in site.categories.trainers %}
+      <div class="trainer section">
+        <div class="subsection simple">
+          <div class="content">
+            <img src="{{ trainer.avatar_url }}" alt="">
+          </div>
+        </div>
+        <div class="subsection compound-complex">
+          <div class="content">
+            <h2>{{ trainer.name }}</h2>
+            <p class="social">
+              <a href="https://github.com/{{ trainer.github }}" class="github">@{{ trainer.github }}</a>
+              <a href="http://twitter.com/{{ trainer.twitter }}" class="twitter">@{{ trainer.twitter }}</a>
+            </p>
+            <p class="bio">{{ trainer.content }}</p>
+            <div class="trainer-testimonial">
+              <p class="quote">“{{ trainer.testimonial }}”</p>
+              <p class="author">—{{ trainer.testimonial_author }}</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="subsection compound-complex">
-        <div class="content">
-          <h2>Matthew McCullough</h2>
-          <p class="social">
-            <a href="https://github.com/matthewmccullough" class="github">@matthewmccullough</a>
-            <a href="http://twitter.com/matthewmccull" class="twitter">@matthewmccull</a>
-          </p>
-          <p class="bio">Matthew McCullough has many years of experience teaching Git and GitHub courses. He is a co-author of O’Reilly’s Git Master Class, with Tim Berglund. He authored DZone’s Git RefCard, as well as the Git modules in “Jenkins: The Deﬁnitive Guide”.</p>
-        </div>
-      </div>
-    </div>
-    <div class="trainer section">
-      <div class="subsection simple">
-        <div class="content">
-          <img src="https://secure.gravatar.com/avatar/ddf2d42eac63eb87e1542fc218dbfc86?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="">
-        </div>
-      </div>
-      <div class="subsection compound-complex">
-        <div class="content">
-          <h2>Tim Berglund</h2>
-          <p class="social">
-            <a href="https://github.com/tlberglund" class="github">@tlberglund</a>
-            <a href="http://twitter.com/tlberglund" class="twitter">@tlberglund</a>
-          </p>
-          <p class="bio">Tim Berglund, a well-known conference speaker, leverages his broad experience to make GitHub’s training exceptional. He co-authored O’Reilly’s Git Master Class with Matthew McCullough, and continues to deliver the high quality that GitHub Training’s customers expect.</p>
-        </div>
-      </div>
-    </div>
-    <div class="trainer">
-      <div class="subsection simple">
-        <div class="content">
-          <img src="https://secure.gravatar.com/avatar/934d4166ea15185f1a031749c2d5fbc5?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="">
-        </div>
-      </div>
-      <div class="subsection compound-complex">
-        <div class="content">
-          <h2>Jared Koumentis</h2>
-          <p class="social">
-            <a href="https://github.com/shepbook" class="github">@ShepBook</a>
-            <a href="http://twitter.com/shepbook" class="twitter">@ShepBook</a>
-          </p>
-          <p class="bio">Jared Koumentis leverages his years of experience in the academic circle to help take GitHub Training to the next level. Applying his experience as a Linux Sysadmin and budding Developer, he brings a fresh perspective to everything you’ll likely see in GitHub Training.</p>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
     {% include page_bottom.html %}
   </div>
 </section>
