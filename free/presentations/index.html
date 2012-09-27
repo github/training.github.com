@@ -1,0 +1,23 @@
+---
+layout: free
+subpage: presentations
+---
+
+<div class="container">
+  <div class="content">
+    <div class="category-description">
+      <h3>Presentations</h3>
+      <p>GitHub’s trainers have published several presentations on Git, including our monthly Intro to Git and GitHub, in addition to curating the best educational Git links from around the web.</p>
+    </div>
+    <ul class="resource-list presentation-list">
+      {% for presentation in site.categories.presentations %}
+        <li class="resource presentation">
+          <div class="container">
+            <a href="{{ presentation.the_url }}">{{ presentation.title }}</a>
+            <p class="body">{{ presentation.content }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
