@@ -1,0 +1,26 @@
+---
+layout: default
+body_class: web
+title: Web-based Git training
+byline: Git training from <strong>anywhere</strong>.
+---
+
+<div class="content">
+  <div class="subpage-list">
+    <ul>
+      <li{% if page.subpage == 'classes' %} class="current"{% endif %}>
+        <a href="{{ site.url }}/web/free-classes">Free Git Classes</a>
+      </li>
+      <li{% if page.subpage == 'foundations' %} class="current"{% endif %}>
+        <a href="{{ site.url }}/web/git-foundations">Git Foundations Course</a>
+      </li>
+      <li{% if page.subpage == 'advanced' %} class="current"{% endif %}>
+        <a href="{{ site.url }}/web/advanced-git">Advanced Git Course</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  {{ content }}
+</div>

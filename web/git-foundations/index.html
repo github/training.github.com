@@ -1,0 +1,84 @@
+---
+layout: web
+subpage: foundations
+prerequisites: Basic knowledge about a version control system is recommended, whether that be Subversion, CVS, Perforce, StarTeam, SourceSafe, ClearCase or any similar product.
+---
+
+<div class="golden-large">
+  <div class="content">
+    <h3>Git Foundations Course</h3>
+    <p>Our Foundations class helps you, as a newcomer to Git and GitHub, fully grasp the the concepts and application of distributed version control so that you can effectively begin using this productivity-enhancing suite of tools. During this live training course, we’ll explore the foundations of Git and GitHub through practical every-day commands and processes. We’ll conclude with workflow ideas and practical tips that will get you on the road to mastery of this revolutionary version control system.</p>
+
+
+    <div class="container">
+      <div class="half">
+        <h4>Topics</h4>
+        <ul>
+          <li>Introductions</li>
+          <li>History of Git and your initial setup</li>
+          <li>Git configuration and its inheritance</li>
+          <li>SSH Authentication and your first repository</li>
+          <li>Understanding and thinking in Git's three stages</li>
+          <li>Adding, committing, and diff-ing code changes</li>
+          <li>The Similarity Index; Moving, Renaming, and Removing files</li>
+          <li>Network protocols, proxies, and Git's speed</li>
+          <li>Managing and using Git Remotes</li>
+          <li>Overview of Git's Architecture</li>
+          <li>Branching, Tagging, and Stashing</li>
+          <li>Merging, Rebasing, and managing conflicts</li>
+          <li>Undoing your work with Git</li>
+          <li>Making Git work with SVN</li>
+        </ul>
+      </div>
+      <div class="half">
+        <h4>Objectives</h4>
+        <ul>
+          <li>Understand how Git works and how to apply that to day to day development.</li>
+          <li>Learn how GitHub makes distributed collaboration both effective and enjoyable.</li>
+          <li>Practice the use of Pull Requests to make contributions to any project.</li>
+          <li>Learn the basic 10 commands that will appear in your every-day use of Git.</li>
+          <li>Know how to “back out” mistakes using Git’s incredible history and ability to revert almost any change.</li>
+          <li>Leverage the features of GitHub for easier collaboration with colleagues.</li>
+          <li>Discover how the offline capabilities of Git work “under the hood”.</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="golden-small">
+  <div class="content">
+    <h4>Upcoming Courses</h4>
+    <ul class="resource-list class-list">
+      {% for class in site.categories.git-foundations %}
+        <li class="resource class">
+          <div class="container">
+            <div class="whole">
+              <h4>{{ class.title }}</h4>
+              <p>
+                <span class="date">{{ class.the_date }}</span>
+                <span class="time">
+                  — {{ class.start_time }}
+                  {% if class.end_time %} till {{ class.end_time }}{% endif %}
+                  {% if class.timezone %}({{ class.timezone }}){% endif %}
+                </span>
+              </p>
+              <div class="description">
+                {{ class.content }}
+              </div>
+              <p><span class="cost">Cost: <strong>{{ class.cost }}</strong></span></p>
+              <p><a href="{{ class.registration_url }}" class="register">Register Now</a></p>
+              </p>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    <p>Group purchase discounts are available. Please <a href="{{ site.url }}/contact">contact us</a> for more information.</p>
+    {% if page.prerequisites %}
+      <h4>Prerequisites</h4>
+      <p>{{ page.prerequisites }}</p>
+    {% endif %}
+  </div>
+</div>
