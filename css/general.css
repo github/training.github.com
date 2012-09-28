@@ -1,0 +1,24 @@
+/* General */
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+}
+
+header, section, footer {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+section.main {
+  padding: 30px 0 10px;
+}

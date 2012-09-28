@@ -1,77 +1,13 @@
 @import "normalize.css";
 @import "grid.css";
+@import "general.css";
 @import "header.css";
+@import "footer.css";
 
-/* General */
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*border-top: 4px solid #0383c0;*/
-  color: #555;
-  font-size: 14px;
-  line-height: 1.6em;
-  -webkit-font-smoothing: antialiased;
-}
-
-header, section, footer {
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.content {
-  padding: 20px;
-}
-
-section.main {
-  padding: 30px 0 10px;
-}
-
-
-/* Footer */
-
-footer {
-  background: #223443;
-  color: #bbb;
-  box-shadow: inset 0 1px 15px rgba(0,0,0,.9);
-  text-shadow: 0 1px 3px rgba(0,0,0,.9);
-}
-
-#footerlogo {
-  float: left;
-  margin-right: 15px;
-}
-
-footer p {
-  margin: 8px 0;
-  font-size: 14px;
-}
-
-footer p a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer .content {
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 320px) {
-  #footerlogo {
-    float: none;
-  }
-  footer {
-    text-align: center;
-  }
-  footer p {
-    margin-top: 5px;
-  }
-}
 
 /* Buttons */
 
-.button, .mini-button {
+.button {
   background-color: #07c;
   background-image: url(../img/grad_white.png);
   background-repeat: repeat-x;
@@ -84,20 +20,13 @@ footer .content {
   border: 1px solid rgba(0,0,0,.5);
 }
 
-.button:hover, .mini-button:hover {
+.button:hover {
   background-color: #09c;
-}
-
-.mini-button {
-  font-size: 13px;
 }
 
 .button + .button {
   margin-left: 15px;
 }
-
-.green { background-color: #2c8929; }
-.green:hover { background-color: #1ebe1a; }
 
 /* Hero Block */
 
@@ -377,12 +306,7 @@ ul {
   font-size: 1.2em;
 }
 
-.promo-box {
-  background: #ddd;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
+/* Components */
 
 .subpage-list ul {
   margin: 0;

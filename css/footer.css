@@ -1,0 +1,39 @@
+/* Footer */
+
+footer {
+  background: #223443;
+  color: #bbb;
+  box-shadow: inset 0 1px 15px rgba(0,0,0,.9);
+  text-shadow: 0 1px 3px rgba(0,0,0,.9);
+}
+
+#footerlogo {
+  float: left;
+  margin-right: 15px;
+}
+
+footer p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .content {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  #footerlogo {
+    float: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p {
+    margin-top: 5px;
+  }
+}
