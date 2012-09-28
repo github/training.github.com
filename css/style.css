@@ -129,6 +129,10 @@
   .overview .images img.second{
     left: -185px;
   }
+  .overview .hero p {
+    max-width: 560px;
+    margin: .5em auto 1em;
+  }
 }
 
 @media screen and (max-width: 480px){
