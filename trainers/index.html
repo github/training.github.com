@@ -15,15 +15,30 @@ byline: Meet the people who will help you <strong>succeed</strong>.
     <div class="four-fifths">
       <div class="content">
         <h2>{{ trainer.name }}</h2>
-        <p class="social">
-          <a href="https://github.com/{{ trainer.github }}" class="github">@{{ trainer.github }}</a>
-          <a href="http://twitter.com/{{ trainer.twitter }}" class="twitter">@{{ trainer.twitter }}</a>
-        </p>
-        <p class="bio">{{ trainer.content }}</p>
-        <div class="trainer-testimonial">
-          <p class="quote">“{{ trainer.testimonial }}”</p>
-          <p class="author">—{{ trainer.testimonial_author }}</p>
+        <div class="container">
+          <div class="half">
+            <p class="social">
+              <a href="https://github.com/{{ trainer.github }}" class="github">@{{ trainer.github }}</a>
+              <a href="http://twitter.com/{{ trainer.twitter }}" class="twitter">@{{ trainer.twitter }}</a>
+            </p>
+            <p class="bio">{{ trainer.content }}</p>
+          </div>
+          <div class="half">
+            <div class="testimonial content">
+              <div class="quote">
+                <p>“{{ trainer.testimonial }}”</p>
+                <div class="pointer-border"></div>
+                <div class="pointer"></div>
+              </div>
+              <div class="author">
+                <strong>{{ trainer.testimonial_author }}</strong>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="two-fifths">
+
     </div>
   {% endfor %}
