@@ -12,7 +12,11 @@ subpage: special-events
       {% for event in site.categories.special-events %}
         <li class="resource class">
           <div class="container">
-            {{ event.title }}
+            <p>{{ event.title }}</p>
+            <p>{{ event.location }} — {{ event.the_date }}</p>
+            <p>{{ event.price }}</p>
+            <p>{{ event.content }}</p>
+            <p><a href="{{ event.registration_url }}">View details and register</a></p>
           </div>
         </li>
       {% endfor %}
