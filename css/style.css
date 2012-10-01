@@ -256,7 +256,7 @@
 
 /* Trainers */
 
-.trainer img {
+.trainer .avatar {
   width: 160px;
   height: 160px;
   border-radius: 50%;
