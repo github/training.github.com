@@ -8,16 +8,20 @@
 /* Buttons */
 
 .button {
-  background-color: #07c;
-  background-image: url(../img/grad_white.png);
-  background-repeat: repeat-x;
-  color: #fff;
-  padding: .5em .8em .55em;
+  position: relative;
   display: inline-block;
+  padding: 0 10px 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 3px rgba(0,0,0,.3);
-  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
-  border: 1px solid rgba(0,0,0,.5);
+  color: #333;
+  text-shadow: 0 1px 0 white;
+  border: 1px solid #D4D4D4;
+  border-bottom-color: #BCBCBC;
+  background: #FAFAFA;
+  background: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+  background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
 }
 
 .button:hover {
@@ -25,7 +29,31 @@
 }
 
 .button + .button {
-  margin-left: 15px;
+  margin-left: 5px;
+}
+
+.icon {
+  padding-left: 28px;
+}
+
+.icon:before {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-twitter:before {
+  background: url(../img/twitter-icon.png) top left no-repeat;
+  background-size: 16px 16px;
+}
+
+.icon-github:before {
+  background: url(../img/octocat-icon.png) top left no-repeat;
+  background-size: 16px 16px;
 }
 
 /* Hero Block */
@@ -262,49 +290,10 @@
   border-radius: 50%;
 }
 
-.trainer .social a {
-  position: relative;
-  padding-left: 21px;
-  margin-right: 10px;
-  padding: 7px 10px 7px 32px;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.2),
-    0 1px 3px rgba(0,0,0,.1),
-    inset 0 -1px 0px rgba(0,0,0,.1);
-  text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  font-weight: 800;
-  font-size: 12px;
-}
-
-.trainer a:before, .trainer .github:before {
-  content: "";
-  float: left;
-  position: absolute;
-  top: 6px;
-  left: 10px;
-  width: 16px;
-  height: 16px;
-}
-
-.trainer .twitter:before {
-  background: url(../img/twitter-icon.png) top left no-repeat;
-  background-size: 16px 16px;
-}
-
-.trainer .github:before {
-  background: url(../img/octocat-icon.png) top left no-repeat;
-  background-size: 16px 16px;
-}
-
-.trainer .twitter {
-  background: -webkit-gradient(linear, left top, left bottom,
-    color-stop(0%,#e0f4ff), color-stop(100%,#b1c7ea));
-}
-
-.trainer .github {
-  background: -webkit-gradient(linear, left top, left bottom,
-    color-stop(0%,#efefef), color-stop(100%,#c7c7c7));
-  color: #363636;
+.main .trainer h3 {
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 1.8em;
 }
 
 /* Content Formatting */
