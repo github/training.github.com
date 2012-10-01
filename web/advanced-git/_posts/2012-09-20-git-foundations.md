@@ -6,5 +6,5 @@ start_time: 9am
 end_time: 12pm
 timezone: MDT
 registration_url: http://github-september2012.eventbrite.com/
-tags: ['advanced']
+tags: ['web-advanced']
 ---

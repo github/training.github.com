@@ -1,0 +1,27 @@
+---
+layout: in-person
+subpage: special-events
+---
+
+
+<div class="three-quarters">
+  <div class="content">
+    <h3>Special Events</h3>
+    <p>GitHub sponsors, supports, hosts and teaches dozens of educational events around the globe each year. These can be free, attached to a conference, or a stand alone workshop with an enrollment process. We hope you'll join us at one of these upcoming educational opportunities.</p>
+    <ul class="resource-list class-list">
+      {% for event in site.categories.special-events %}
+        <li class="resource class">
+          <div class="container">
+            {{ event.title }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="quarter">
+  <div class="content">
+    <h4>Topics at Live Events</h4>
+    <p>Live events may cover anything from Git Foundations up through the more Advanced topics. Check out each event's details and registrations pages to find more info about the topics that will be covered then.</p>
+  </div>
+</div>
