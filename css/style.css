@@ -316,7 +316,7 @@ p.more {
 /* HTML Elements */
 
 a {
-  color: #0383c0;
+  color: #00a5ea;
   text-decoration: none;
   transition: all .25s;
   -moz-transition: all .25s;
@@ -325,7 +325,7 @@ a {
 }
 
 a:hover {
-  color: #00a5ea;
+  color: #0383c0;
 }
 
 ul {
