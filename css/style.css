@@ -19,9 +19,12 @@
   text-shadow: 0 1px 0 white;
   border: 1px solid #D4D4D4;
   border-bottom-color: #BCBCBC;
-  background: #FAFAFA;
-  background: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+  background: #EAEAEA;
   background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
+  background: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+  background: -o-linear-gradient(#FAFAFA, #EAEAEA);
+  background: -ms-linear-gradient(#FAFAFA, #EAEAEA);
+  background: linear-gradient(#FAFAFA, #EAEAEA);
 }
 
 .button:hover {
@@ -48,11 +51,15 @@
 
 .icon-twitter:before {
   background: url(../img/twitter-icon.png) top left no-repeat;
+  -webkit-background-size: 16px 16px;
+  -moz-background-size: 16px 16px;
   background-size: 16px 16px;
 }
 
 .icon-github:before {
   background: url(../img/octocat-icon.png) top left no-repeat;
+  -webkit-background-size: 16px 16px;
+  -moz-background-size: 16px 16px;
   background-size: 16px 16px;
 }
 
@@ -60,8 +67,11 @@
 
 .hero {
   background: #00a5ea;
-  background: -webkit-gradient(linear, left top, left bottom,
-    color-stop(0%,#1875c6), color-stop(100%,#00a5ea));
+  background: -webkit-linear-gradient(#1875c6, #00a5ea);
+  background: -moz-linear-gradient(#1875c6, #00a5ea);
+  background: -o-linear-gradient(#1875c6, #00a5ea);
+  background: -ms-linear-gradient(#1875c6, #00a5ea);
+  background: linear-gradient(#1875c6, #00a5ea);
   color: #fff;
   text-shadow: 0 1px 3px rgba(0,0,0,.3);
   font-size: 1.4em;
@@ -133,12 +143,20 @@
   top: 10px;
   left: 130px;
   -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
 .overview .images img.second {
   top: 50px;
   left: 20px;
   -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 @media screen and (max-width: 959px){
@@ -184,11 +202,15 @@
 
 .testimonial .quote {
   background: #fff799;
+  background: -webkit-linear-gradient(#fffab4, #fff799);
+  background: -moz-linear-gradient(#fffab4, #fff799);
+  background: -o-linear-gradient(#fffab4, #fff799);
+  background: -ms-linear-gradient(#fffab4, #fff799);
+  background: linear-gradient(#fffab4, #fff799);
   color: #9e7300;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,.1), inset 0 0 1px rgba(255,255,255,.6);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fffab4), color-stop(100%,#fff799));
   border: 1px solid #e5cd62;
   position: relative;
 }
@@ -204,7 +226,6 @@
   height: 20%;
   max-width: 300px;
   max-height: 100px;
-  -webkit-box-shadow: 0 15px 10px rgba(0,0,0,.1);
   box-shadow: 0 15px 10px rgba(0,0,0,.1);
   -webkit-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
@@ -307,10 +328,11 @@ p.more {
 a {
   color: #00a5ea;
   text-decoration: none;
-  transition: all .25s;
-  -moz-transition: all .25s;
   -webkit-transition: all .25s;
+  -moz-transition: all .25s;
   -o-transition: all .25s;
+  -ms-transition: all .25s;
+  transition: all .25s;
 }
 
 a:hover {
@@ -377,7 +399,12 @@ ul {
 .class-list .class {
   margin: 15px 0;
   padding: 10px;
+  background: #F1F1F1;
   background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -o-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -ms-linear-gradient(#FAFAFA, #F1F1F1);
+  background: linear-gradient(#FAFAFA, #F1F1F1);
   border: 1px solid #DDD;
   border-bottom: 1px solid #CCC;
   border-radius: 3px;
