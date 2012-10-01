@@ -3,7 +3,7 @@ name: Jared Koumentis
 avatar_url: https://secure.gravatar.com/avatar/934d4166ea15185f1a031749c2d5fbc5?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png
 github: ShepBook
 twitter: ShepBook
-testimonial: Testmonial goes here.
+testimonial: <img src="/img/trollface.png" width="110px" height="90px" />
 testimonial_author: Some Person
 ---
 
