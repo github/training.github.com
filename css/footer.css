@@ -1,15 +1,21 @@
 /* Footer */
 
 footer {
-  background: #223443;
-  color: #bbb;
-  box-shadow: inset 0 1px 15px rgba(0,0,0,.9);
-  text-shadow: 0 1px 3px rgba(0,0,0,.9);
+  background: -webkit-gradient(linear, left top, left bottom,
+    color-stop(0%,#b1ceea), color-stop(100%,#e0f4ff));
+  color: #404040;
+  box-shadow: inset 0 1px 10px rgba(0,0,0,.1);
+  text-shadow: 0 1px 0px rgba(255,255,255,.5);
 }
 
 #footerlogo {
   float: left;
   margin-right: 15px;
+  opacity: .7;
+}
+
+#footerlogo:hover {
+  opacity: 1;
 }
 
 footer p {
@@ -18,8 +24,13 @@ footer p {
 }
 
 footer p a {
-  color: #fff;
-  text-decoration: none;
+  color: #00a5ea;
+  opacity: .7;
+  font-weight: bold;
+}
+
+footer p a:hover {
+  opacity: 1;
 }
 
 footer .content {

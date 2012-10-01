@@ -3,6 +3,7 @@
 #logo {
   font-size: 1em;
   margin: 0;
+  position: relative;
 }
 
 #logo span {
@@ -10,19 +11,16 @@
 }
 
 #logo img {
+  opacity: .7;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;
   transition: all .25s;
 }
 
-#logo img.hover {
-  display: none;
-}
-
-#logo:hover img.normal {
-  display: none;
-}
-
-#logo:hover img.hover {
-  display: inline-block;
+#logo img:hover {
+  opacity: 1;
 }
 
 .top-bar {
@@ -36,9 +34,8 @@
 
 header {
   text-align: center;
-  background: #f7f7f7;
   background: -webkit-gradient(linear, left top, left bottom,
-    color-stop(0%,#e0f4ff), color-stop(100%,#c3d0ea));
+    color-stop(0%,#e0f4ff), color-stop(100%,#b1ceea));
   box-shadow: inset 0 1px 0 rgba(255,255,255,.9);
 }
 
@@ -69,12 +66,12 @@ nav ul {
   padding: 0 0 .3em;
   padding: .3em .6em .4em;
   border-radius: 5px;
-  text-shadow: 0 1px 0 rgba(255,255,255,.9);
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
 #nav li a:hover {
   color: #02a2ee;
-  /*box-shadow: inset 0 1px 3px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.3);*/
+  text-shadow: 0 1px 0 rgba(255,255,255,.9);
 }
 
 #nav li.current a, #nav li.current a:hover {
