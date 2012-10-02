@@ -47,7 +47,7 @@
 }
 
 .main .trainer h3 {
-  margin-bottom: 0;
+  margin: .5em 0 0;
   font-weight: 300;
   font-size: 1.8em;
 }
@@ -119,7 +119,6 @@ ul {
 
 .class-list .class {
   margin: 15px 0;
-  padding: 10px;
   background: #F1F1F1;
   background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
   background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
@@ -131,6 +130,62 @@ ul {
   border-radius: 3px;
   text-shadow: 0 1px 0 white;
   box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1;
+}
+
+.class h4 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: .25em 0;
+}
+
+
+.class .summary {
+  border-bottom: 1px solid #DDD;
+  -webkit-box-shadow: 0 1px 0 white;
+  box-shadow: 0 1px 0 white;
+  padding: 10px 12px;
+}
+
+.class .details {
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.details .icon {
+  position: relative;
+  top: 3px;
+}
+
+.details span {
+  margin-right: 5px;
+}
+
+.class .button {
+  border-radius: 3px;
+  background: #0acef2;
+  background: -webkit-linear-gradient(#0acef2, #059ce5);
+  background: -moz-linear-gradient(#0acef2, #059ce5);
+  background: -o-linear-gradient(#0acef2, #059ce5);
+  background: -ms-linear-gradient(#0acef2, #059ce5);
+  background: linear-gradient(#0acef2, #059ce5);
+  border: 1px solid #0071B9;
+  -webkit-box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+.class .actions {
+  float: right;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.actions .price {
+  font-size: 1em;
+  font-weight: 700;
+  margin: .25em 0;
 }
 
 .align-left { text-align: left; }

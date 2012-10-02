@@ -13,26 +13,27 @@ subpage: classes
       <ul class="resource-list class-list">
         {% for class in site.categories.free-classes %}
           <li class="resource class">
-            <div class="container">
-              <div class="three-quarters">
-                <h4>{{ class.title }}</h4>
-                <p>
-                  <span class="date">{{ class.the_date }}</span>
-                  <span class="time">
-                    — {{ class.start_time }}
-                    {% if class.end_time %} till {{ class.end_time }}{% endif %}
-                    {% if class.timezone %}({{ class.timezone }}){% endif %}
-                  </span>
-                </p>
-                <div class="description">
-                  {{ class.content }}
-                </div>
-              </div>
-              <div class="quarter align-right">
-                <p><span class="cost">Cost: <strong>{{ class.cost }}</strong></span></p>
-                <p><a href="{{ class.registration_url }}" class="register">Register Now</a></p>
+            <div class="summary">
+              <div class="actions">
+                <p class="price">Free Class</p>
+                <p class="register">
+                  <a href="{{ class.registration_url }}" class="button">Register Now</a>
                 </p>
               </div>
+              <h4>{{ class.title }}</h4>
+              {{ class.content }}
+            </div>
+            <div class="details">
+              <span class="date">
+                <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+                {{ class.the_date }}
+              </span>
+              <span class="time">
+                <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
+                {{ class.start_time }}
+                {% if class.end_time %} till {{ class.end_time }}{% endif %}
+                {% if class.timezone %}({{ class.timezone }}){% endif %}
+              </span>
             </div>
           </li>
         {% endfor %}
