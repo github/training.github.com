@@ -35,34 +35,6 @@
   margin-left: 5px;
 }
 
-.icon {
-  padding-left: 28px;
-}
-
-.icon:before {
-  content: "";
-  float: left;
-  position: absolute;
-  top: 4px;
-  left: 8px;
-  width: 16px;
-  height: 16px;
-}
-
-.icon-twitter:before {
-  background: url(../img/twitter-icon.png) top left no-repeat;
-  -webkit-background-size: 16px 16px;
-  -moz-background-size: 16px 16px;
-  background-size: 16px 16px;
-}
-
-.icon-github:before {
-  background: url(../img/octocat-icon.png) top left no-repeat;
-  -webkit-background-size: 16px 16px;
-  -moz-background-size: 16px 16px;
-  background-size: 16px 16px;
-}
-
 /* Hero Block */
 
 .hero {
@@ -277,7 +249,7 @@
 }
 
 .testimonial .author {
-  margin: 15px 0;
+  margin: 15px 0 0;
   text-align: center;
 }
 
@@ -315,6 +287,21 @@
   margin-bottom: 0;
   font-weight: 300;
   font-size: 1.8em;
+}
+
+.trainer .social a {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: .7;
+}
+
+.trainer .social a:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
 }
 
 /* Content Formatting */

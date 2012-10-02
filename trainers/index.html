@@ -14,13 +14,19 @@ byline: Meet the people who will help you <strong>succeed</strong>.
     </div>
     <div class="four-fifths">
       <div class="content">
-        <h3>{{ trainer.name }}</h3>
         <div class="container">
           <div class="half">
-            <p class="social">
-              <a href="https://github.com/{{ trainer.github }}" class="button icon icon-github">@{{ trainer.github }}</a>
-              <a href="http://twitter.com/{{ trainer.twitter }}" class="button icon icon-twitter">@{{ trainer.twitter }}</a>
-            </p>
+            <h3>
+              {{ trainer.name }}
+              <span class="social">
+                <a href="https://github.com/{{ trainer.github }}">
+                  <img src="{{ site.url }}/img/octocat-icon.png" width="16px" height="16px" alt="View {{ trainer.github }}’s code on GitHub">
+                </a>
+                <a href="http://twitter.com/{{ trainer.twitter }}">
+                  <img src="{{ site.url }}/img/twitter-icon.png" width="16px" height="16px" alt="Follow {{ trainer.github }} on Twitter">
+                </a>
+              </span>
+            </h3>
             <p class="bio">{{ trainer.content }}</p>
           </div>
           <div class="half">
@@ -38,7 +44,5 @@ byline: Meet the people who will help you <strong>succeed</strong>.
         </div>
       </div>
     </div>
-    <div class="two-fifths">
-
-    </div>
-  {% endfor %}
+  </div>
+{% endfor %}
