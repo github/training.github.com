@@ -1,0 +1,129 @@
+/* Hero Block */
+
+.hero {
+  background: #00a5ea;
+  background: -webkit-linear-gradient(#1875c6, #00a5ea);
+  background: -moz-linear-gradient(#1875c6, #00a5ea);
+  background: -o-linear-gradient(#1875c6, #00a5ea);
+  background: -ms-linear-gradient(#1875c6, #00a5ea);
+  background: linear-gradient(#1875c6, #00a5ea);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+  font-size: 1.4em;
+  line-height: 1.4em;
+  box-shadow: inset 0 1px 15px rgba(0,0,0,.3);
+}
+
+.hero h2 {
+  font-size: 2.1em;
+  font-weight: 300;
+  margin: 0.7em 0 0.4em;
+}
+
+.hero p {
+  font-weight: 300;
+  margin: .5em 0 1em;
+}
+
+.hero .content {
+  padding: 10px 20px;
+}
+
+/* Overview hero block */
+
+.overview .hero .container {
+  overflow: visible;
+}
+
+.overview .hero .content {
+  padding: 30px 20px;
+}
+
+.overview .hero h2 {
+  font-size: 1.8em;
+  margin: .83em 0;
+}
+
+.overview .intro, .overview .images {
+  float: left;
+}
+
+.overview .images {
+  position: relative;
+  top: -10px;
+  overflow: visible;
+  height: 260px;
+}
+
+@media screen and (min-width: 960px){
+  .overview .images {
+    width: 460px;
+  }
+  .overview .intro {
+    width: 500px;
+  }
+}
+
+.overview .images img {
+  width: 300px;
+  height: 225px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 4px solid #fff;
+  box-shadow: 0 1px 10px rgba(0,0,0,.3);
+}
+
+.overview .images img.first {
+  top: 10px;
+  left: 130px;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+.overview .images img.second {
+  top: 50px;
+  left: 20px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+@media screen and (max-width: 959px){
+  .overview .images, .overview .intro {
+    text-align: center;
+    width: 100%;
+  }
+  .overview .images {
+    width: 10%;
+    margin: 0 auto;
+    float: none;
+  }
+  .overview .images img.first {
+    left: -50px;
+  }
+  .overview .images img.second{
+    left: -185px;
+  }
+  .overview .hero p {
+    max-width: 560px;
+    margin: .5em auto 1em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .overview .images {
+    height: 200px;
+  }
+  .overview .images img {
+    width: 250px;
+    height: 166px;
+  }
+}
+
+
