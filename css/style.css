@@ -5,6 +5,7 @@
 @import "footer.css";
 @import "hero.css";
 @import "testimonials.css";
+@import "subpage-list.css";
 
 
 /* Buttons */
@@ -100,35 +101,6 @@ ul {
   margin: 0;
   color: #333;
   font-size: 1.2em;
-}
-
-/* Components */
-
-.subpage-list ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.subpage-list li {
-  display: inline-block;
-}
-
-.subpage-list li a {
-  padding: 5px 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.subpage-list li.current a,
-.subpage-list li.current a:hover {
-  background: #0383C0;
-  color: #fff;
-}
-
-.subpage-list li a:hover {
-  background: #eee;
 }
 
 .resource-list {
