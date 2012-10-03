@@ -50,25 +50,31 @@ subpage: advanced
     <h4>Upcoming Courses</h4>
     <ul class="resource-list class-list">
       {% for class in site.tags.inperson-advanced %}
-        <li class="resource class">
-          <div class="container">
-            <div class="whole">
-              <h4>{{ class.title }}</h4>
-              <p>
-                <span class="date">{{ class.the_date }}</span>
-                <span class="time">
-                  — {{ class.start_time }}
-                  {% if class.end_time %} till {{ class.end_time }}{% endif %}
-                  {% if class.timezone %}({{ class.timezone }}){% endif %}
-                </span>
-              </p>
-              <div class="description">
-                {{ class.content }}
-              </div>
-              <p><span class="cost">Cost: <strong>{{ class.cost }}</strong></span></p>
-              <p><a href="{{ class.registration_url }}" class="register">Register Now</a></p>
+        <li class="resource class small-class">
+          <div class="summary">
+            <div class="actions">
+              <p class="register">
+                <a href="{{ class.registration_url }}" class="button">Register Now</a>
               </p>
             </div>
+            <h4>{{ class.title }}</h4>
+            <p>
+            </p>
+            <div class="description">
+              <p><span class="cost">{{ class.cost }}</span></p>
+            </div>
+          </div>
+          <div class="details">
+            <span class="date">
+              <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+              {{ class.the_date }}
+            </span>
+            <span class="time">
+              <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
+              {{ class.start_time }}
+              {% if class.end_time %} till {{ class.end_time }}{% endif %}
+              {% if class.timezone %}({{ class.timezone }}){% endif %}
+            </span>
           </div>
         </li>
       {% endfor %}

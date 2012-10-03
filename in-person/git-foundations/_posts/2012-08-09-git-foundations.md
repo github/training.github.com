@@ -1,7 +1,7 @@
 ---
 title: Git Foundations
-cost: $195 to $136.50 per student.
-the_date: August 9-10, 2012
+cost: $195 per person
+the_date: Aug 9-10, 2012
 start_time: 9am
 end_time: 12pm
 timezone: MDT

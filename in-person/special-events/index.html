@@ -11,12 +11,25 @@ subpage: special
     <ul class="resource-list class-list">
       {% for event in site.categories.special-events %}
         <li class="resource class">
-          <div class="container">
-            <p>{{ event.title }}</p>
-            <p>{{ event.location }} — {{ event.the_date }}</p>
-            <p>{{ event.price }}</p>
-            <p>{{ event.content }}</p>
-            <p><a href="{{ event.registration_url }}">View details and register</a></p>
+          <div class="summary">
+            <div class="actions">
+              <p class="price">{{ event.price }}</p>
+              <p class="register">
+                <a href="{{ class.registration_url }}" class="button">Register Now</a>
+              </p>
+            </div>
+            <h4>{{ event.title }}</h4>
+            {{ event.content }}
+          </div>
+          <div class="details">
+            <span class="date">
+              <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+              {{ event.the_date }}
+            </span>
+            <span class="time">
+              <img src="{{ site.url }}/img/icon-location.png" width="16px" height="16px" class="icon">
+              {{ event.location }}
+            </span>
           </div>
         </li>
       {% endfor %}
