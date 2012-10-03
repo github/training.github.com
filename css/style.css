@@ -203,6 +203,7 @@ p.register {
   border: 3px solid #ccc;
   width: 85%;
   max-width: 200px;
+  border-radius: 3px;
 }
 
 .video, .repo, .book, .other {
