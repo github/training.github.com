@@ -1,6 +1,6 @@
-<section class="hero">
+<section class="hero{% if page.body_class != 'overview' %} pagehead{% endif %}">
   <div class="container">
-    <div class="whole content">
+    <div class="content">
       {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
       {% if page.byline %}<p>{{ page.byline }}</p>{% endif %}
     </div>

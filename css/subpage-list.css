@@ -23,7 +23,8 @@
 .subpage-list li a {
   display: block;
   text-align: center;
-  line-height: 35px;
+  line-height: 1.375em;
+  padding: 10px 0;
   font-size: 13px;
   background: #F1F1F1;
   background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
