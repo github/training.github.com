@@ -8,6 +8,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  display: table-row;
 }
 
 .subpage-list li {
@@ -82,6 +83,9 @@
 /* Mobiles get a stacked version */
 
 @media (max-width: 480px) {
+  .subpage-list ul {
+    display: block;
+  }
   .subpage-list li {
     display: block;
     width: auto;
