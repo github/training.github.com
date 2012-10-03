@@ -122,6 +122,9 @@
   .pagehead {
     font-size: .9em;
   }
+  .pagehead p {
+    font-weight: 500;
+  }
 }
 
 
