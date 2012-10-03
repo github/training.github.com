@@ -44,19 +44,17 @@
   margin: .83em 0;
 }
 
-.overview .intro, .overview .images {
+.overview .image {
+  position: relative;
+  padding: 0;
+}
+
+.overview .intro, .overview .image {
   float: left;
 }
 
-.overview .images {
-  position: relative;
-  top: -10px;
-  overflow: visible;
-  height: 260px;
-}
-
 @media screen and (min-width: 960px){
-  .overview .images {
+  .overview .image {
     width: 460px;
   }
   .overview .intro {
@@ -64,51 +62,20 @@
   }
 }
 
-.overview .images img {
-  width: 300px;
-  height: 225px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 4px solid #fff;
-  box-shadow: 0 1px 10px rgba(0,0,0,.3);
-}
-
-.overview .images img.first {
-  top: 10px;
-  left: 130px;
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  -o-transform: rotate(4deg);
-  -ms-transform: rotate(4deg);
-  transform: rotate(4deg);
-}
-
-.overview .images img.second {
-  top: 50px;
-  left: 20px;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  transform: rotate(-5deg);
+.overview .image img {
+  margin: -20px 0 -60px -20px;
 }
 
 @media screen and (max-width: 959px){
-  .overview .images, .overview .intro {
+  .overview .image, .overview .intro {
     text-align: center;
     width: 100%;
   }
-  .overview .images {
-    width: 10%;
-    margin: 0 auto;
-    float: none;
+  .overview .hero .content {
+    padding-top: 10px;
   }
-  .overview .images img.first {
-    left: -50px;
-  }
-  .overview .images img.second{
-    left: -185px;
+  .overview .image img {
+    margin: -20px auto -20px;
   }
   .overview .hero p {
     max-width: 560px;
@@ -117,12 +84,27 @@
 }
 
 @media screen and (max-width: 480px){
-  .overview .images {
-    height: 200px;
+  .overview .intro {
+    font-size: 0.85em;
   }
-  .overview .images img {
-    width: 250px;
-    height: 166px;
+  .overview .image img {
+    width: 364px;
+    height: 238px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .overview .intro h2 {
+    line-height: 1.2em;
+  }
+  .overview .intro p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  .overview .image img {
+    width: 320px;
+    height: 209px;
+    margin-bottom: -60px;
   }
 }
 
