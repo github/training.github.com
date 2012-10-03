@@ -182,6 +182,10 @@ ul {
   margin-left: 20px;
 }
 
+.small-class .actions {
+  margin-top: 3px;
+}
+
 .actions .price {
   font-size: 1em;
   font-weight: 700;
