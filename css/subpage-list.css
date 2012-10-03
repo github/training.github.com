@@ -78,3 +78,37 @@
   color: #02A2EE;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
 }
+
+/* Mobiles get a stacked version */
+
+@media (max-width: 480px) {
+  .subpage-list li {
+    display: block;
+    width: auto;
+  }
+  .subpage-list li a {
+    border: 1px solid #b3cee2;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid #b3cee2;
+  }
+
+  .subpage-list li:first-child {
+    border-top: 1px solid #b3cee2;
+  }
+  .subpage-list li:first-child a {
+    border-top: none;
+  }
+  .subpage-list li:first-child,
+  .subpage-list li:first-child a {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .subpage-list li:last-child,
+  .subpage-list li:last-child a {
+    border-radius: 0 0 3px 3px;
+  }
+
+  .subpage-list li.current:first-child {
+    border-top: none;
+  }
+}
