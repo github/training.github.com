@@ -98,8 +98,9 @@
     line-height: 1.2em;
   }
   .overview .intro p {
-    font-size: 0.9em;
+    font-size: .95em;
     line-height: 1.5em;
+    font-weight: 500;
   }
   .overview .image img {
     width: 320px;

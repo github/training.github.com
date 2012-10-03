@@ -14,7 +14,6 @@
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   filter: alpha(opacity=70);
   opacity: .7;
-}
   -webkit-transition: all .25s;
   -moz-transition: all .25s;
   -o-transition: all .25s;
@@ -115,5 +114,24 @@ nav ul {
   }
   header {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #nav .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #nav li {
+    margin: .4em 0;
+  }
+  #nav li a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nav li a {
+    font-size: 12px;
   }
 }
