@@ -1,5 +1,5 @@
 ---
-title: Git & GitHub Foundations, NFJS Fort Lauderdale
+title: Advanced Git & GitHub, NFJS Fort Lauderdale
 location: Fort Lauderdale, FL, USA
 the_date: Nov 30, 2012
 start_time: 1pm
