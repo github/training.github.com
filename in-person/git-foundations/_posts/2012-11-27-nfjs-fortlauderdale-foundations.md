@@ -1,7 +1,7 @@
 ---
 title: Git & GitHub Foundations, NFJS Fort Lauderdale
 location: Fort Lauderdale, FL, USA
-the_date: Nov 17, 2012
+the_date: Nov 27, 2012
 start_time: 9am
 end_time: 6pm
 timezone: EST
