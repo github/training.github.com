@@ -12,17 +12,21 @@ subpage: presentations
     <ul class="resource-list presentation-list container">
       {% for presentation in site.categories.presentations %}
         <li class="resource presentation third">
-          <div class="container">
-            <a href="{{ presentation.the_url }}">
-              <img src="assets/{{ presentation.image_filename }}">
-            </a>
-            <h4><a href="{{ presentation.the_url }}">{{ presentation.title }}</a></h4>
-            <p class="body">
-              By
-              <a href="{{ presentation.author_url }}" class="author">
-                {{ presentation.author }}
-              </a>
-            </p>
+          <div class="pres-wrapper">
+            <div class="container">
+              <div class="inner-padding">
+                <a href="{{ presentation.the_url }}">
+                  <img src="assets/{{ presentation.image_filename }}">
+                </a>
+                <h4><a href="{{ presentation.the_url }}">{{ presentation.title }}</a></h4>
+                <p class="body">
+                  By
+                  <a href="{{ presentation.author_url }}" class="author">
+                    {{ presentation.author }}
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </li>
       {% endfor %}

@@ -301,6 +301,49 @@ p.register {
   }
 }
 
+.pres-wrapper {
+  padding-right: 10px;
+}
+
+.pres-wrapper .container {
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -o-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -ms-linear-gradient(#FAFAFA, #F1F1F1);
+  background: linear-gradient(#FAFAFA, #F1F1F1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1;
+}
+
+.pres-wrapper .container .inner-padding {
+  padding: 10px 12px;
+}
+
+.pres-wrapper .inner-padding img {
+  width: 95%;
+}
+
+@media screen and (min-width: 361px) and (max-width: 480px){
+  .pres-wrapper .inner-padding img {
+    width: 36%;
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  .pres-wrapper .inner-padding h4 {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .pres-wrapper .inner-padding {
+    text-align: center;
+  }
+}
+
 /* Contact page */
 
 .contact .main {
