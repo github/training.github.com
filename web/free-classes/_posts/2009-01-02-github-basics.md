@@ -1,12 +1,12 @@
 ---
 title: Git and GitHub Basics
 location: Online
-the_date: Oct 25, 2012
+the_date: Nov 5, 2012
 start_time: 9am
 end_time: 10am
 timezone: MDT
 cost: Free
-registration_url: https://www3.gotomeeting.com/register/633753950
+registration_url: https://www3.gotomeeting.com/register/430015814
 tags: ['web-free']
 ---
 
