@@ -283,7 +283,74 @@ p.register {
   }
 }
 
+.contact .main {
+  padding-top: 10px;
+}
+
+.email-button {
+  display: inline-block;
+  padding: .5em .8em .6em;
+  border-radius: 5px;
+  font-size: 1.8em;
+  font-weight: 300;
+  background: #0acef2;
+  background: -webkit-linear-gradient(#0acef2, #059ce5);
+  background: -moz-linear-gradient(#0acef2, #059ce5);
+  background: -o-linear-gradient(#0acef2, #059ce5);
+  background: -ms-linear-gradient(#0acef2, #059ce5);
+  background: linear-gradient(#0acef2, #059ce5);
+  border: 1px solid #0071B9;
+  -webkit-box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  box-shadow: 0 1px 3px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  -webkit-animation-name: buttonglow;
+  -moz-animation-name: buttonglow;
+  -ms-animation-name: buttonglow;
+  -o-animation-name: buttonglow;
+  animation-name: buttonglow;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes buttonglow {
+  from { -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.5); }
+  36% { -webkit-box-shadow: 0 0 20px #00b1ff, inset 0 1px 0 rgba(255,255,255,.5); }
+  to { -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.5); }
+}
+
+.email-button:hover {
+  color: #fff;
+  background: -webkit-linear-gradient(#07d7ff, #059ce5);
+}
+
+.email-button img {
+  position: relative;
+  top: 2px;
+  left: -3px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 480px){
+  .email-button {
+    font-size: 1.25em;
+  }
+  .email-button img {
+    width: 24px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .email-button {
+    font-weight: normal;
+  }
+}
+
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
-
