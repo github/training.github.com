@@ -1,5 +1,5 @@
 ---
-title: Git Foundations
+title: Git & GitHub Foundations
 cost: $195 per person
 the_date: Oct 31-Nov 1, 2012
 start_time: 9am
