@@ -1,11 +1,11 @@
 ---
-title: The Basics of Using Git and GitHub
-cost: FREE
-the_date: 21 Aug 2012
+title: Git and GitHub Basics
+cost: Free
+the_date: Oct 25, 2012
 start_time: 9am
 end_time: 10am
 timezone: MDT
-registration_url: https://www3.gotomeeting.com/register/598777422
+registration_url: https://www3.gotomeeting.com/register/633753950
 tags: ['class']
 ---
 
