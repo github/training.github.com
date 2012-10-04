@@ -7,43 +7,28 @@
 @import "testimonials.css";
 @import "subpage-list.css";
 
-
-/* Buttons */
-
-.button {
-  position: relative;
-  display: inline-block;
-  padding: 0 10px 0 10px;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 24px;
-  border-radius: 3px;
-  color: #333;
-  text-shadow: 0 1px 0 white;
-  border: 1px solid #D4D4D4;
-  border-bottom-color: #BCBCBC;
-  background: #EAEAEA;
-  background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
-  background: -moz-linear-gradient(#FAFAFA, #EAEAEA);
-  background: -o-linear-gradient(#FAFAFA, #EAEAEA);
-  background: -ms-linear-gradient(#FAFAFA, #EAEAEA);
-  background: linear-gradient(#FAFAFA, #EAEAEA);
-}
-
-.button:hover {
-  background-color: #09c;
-}
-
-.button + .button {
-  margin-left: 5px;
-}
-
 /* Trainers */
+
+.trainer .fifth .content {
+  padding-right: 0;
+}
+
+.trainer .content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
 
 .trainer .avatar {
   width: 160px;
   height: 160px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 959px){
+  .trainer .avatar {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .main .trainer h3 {
@@ -67,13 +52,15 @@
   opacity: 1;
 }
 
-/* Content Formatting */
+.trainer .testimonial {
+  margin-top: 10px;
+}
+
+/* HTML Elements */
 
 p.more {
   margin-bottom: 0;
 }
-
-/* HTML Elements */
 
 a {
   color: #00a5ea;
@@ -102,6 +89,8 @@ ul {
   color: #333;
   font-size: 1.2em;
 }
+
+/* Classes and resources */
 
 .resource-list {
   padding: 0;
@@ -177,6 +166,16 @@ ul {
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
+.class .button:hover {
+  color: #fff;
+  background: -webkit-linear-gradient(#07d7ff, #059ce5);
+}
+
+.class .button:active {
+  position: relative;
+  top: 1px;
+}
+
 .class .actions {
   float: right;
   text-align: center;
@@ -196,8 +195,6 @@ ul {
 p.register {
   text-align: right;
 }
-
-/* resource lists */
 
 .resource img {
   border: 3px solid #ccc;
@@ -283,6 +280,8 @@ p.register {
   }
 }
 
+/* Contact page */
+
 .contact .main {
   padding-top: 10px;
 }
@@ -328,6 +327,11 @@ p.register {
   background: -webkit-linear-gradient(#07d7ff, #059ce5);
 }
 
+.email-button:active {
+  position: relative;
+  top: 1px;
+}
+
 .email-button img {
   position: relative;
   top: 2px;
@@ -350,6 +354,8 @@ p.register {
     font-weight: normal;
   }
 }
+
+/* Utility classes */
 
 .align-left { text-align: left; }
 .align-right { text-align: right; }
