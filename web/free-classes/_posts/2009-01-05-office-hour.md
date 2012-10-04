@@ -1,12 +1,12 @@
 ---
 title: GitHub Office Hour
 location: Online
-the_date: Dec 4, 2012
+the_date: Oct 25, 2012
 start_time: 10am
 end_time: 11am
 timezone: MDT
 cost: Free
-registration_url: https://www3.gotomeeting.com/register/226028094
+registration_url: https://www3.gotomeeting.com/register/327093718
 tags: ['web-free']
 ---
 
