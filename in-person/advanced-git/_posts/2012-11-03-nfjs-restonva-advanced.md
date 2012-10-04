@@ -6,7 +6,7 @@ location: Reston, VA, USA
 start_time: 9am
 end_time: 12:30pm
 timezone: EST
-registration_url: hhttps://nofluffjuststuff.com/conference/reston/2012/11/session?id=27325
+registration_url: http://nofluffjuststuff.com/conference/reston/2012/11/session?id=27325
 tags: ['inperson-advanced']
 ---
 
