@@ -9,26 +9,26 @@ subpage: special
     <h3>Special Events</h3>
     <p>GitHub sponsors, supports, hosts and teaches dozens of educational events around the globe each year. These can be free, attached to a conference, or a stand alone workshop with an enrollment process. We hope you'll join us at one of these upcoming educational opportunities.</p>
     <ul class="resource-list class-list">
-      {% for event in site.categories.special-events %}
+      {% for class in site.categories.special-events %}
         <li class="resource class">
           <div class="summary">
             <div class="actions">
-              <p class="cost">{{ event.cost }}</p>
+              <p class="cost">{{ class.cost }}</p>
               <p class="register">
                 <a href="{{ class.registration_url }}" class="button">Register Now</a>
               </p>
             </div>
-            <h4>{{ event.title }}</h4>
-            {{ event.content }}
+            <h4>{{ class.title }}</h4>
+            {{ class.content }}
           </div>
           <div class="details">
             <span class="date">
               <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
-              {{ event.the_date }}
+              {{ class.the_date }}
             </span>
             <span class="time">
               <img src="{{ site.url }}/img/icon-location.png" width="16px" height="16px" class="icon">
-              {{ event.location }}
+              {{ class.location }}
             </span>
           </div>
         </li>
