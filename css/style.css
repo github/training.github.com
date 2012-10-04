@@ -111,15 +111,28 @@ ul {
   font-size: 1.2em;
 }
 
+.main h4 {
+  margin: 0;
+}
+
 /* Classes and resources */
+
+.help-box p {
+  margin-bottom: 0;
+}
 
 .resource-list {
   padding: 0;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .resource {
   margin-bottom: 30px;
+}
+
+.resource:last-child {
+  margin-bottom: 0;
 }
 
 .resource h4,
@@ -174,6 +187,9 @@ ul {
 
 .class .button {
   border-radius: 3px;
+  padding: 0 10px 0 10px;
+  line-height: 24px;
+  display: inline-block;
   background: #0acef2;
   background: -webkit-linear-gradient(#0acef2, #059ce5);
   background: -moz-linear-gradient(#0acef2, #059ce5);
