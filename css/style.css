@@ -170,6 +170,10 @@ ul {
   padding: 10px 12px;
 }
 
+.class .summary .text {
+  float: left;
+}
+
 .class .details {
   padding: 6px 12px;
   font-weight: bold;
@@ -503,3 +507,4 @@ p.register {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+.clear { clear: both; }
