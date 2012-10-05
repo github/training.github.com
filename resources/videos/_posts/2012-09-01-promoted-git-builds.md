@@ -1,5 +1,5 @@
 ---
-title: Validated Build Promotions with Git, GitHub, and Jekins
+title: Validated Build Promotions with Git, GitHub, and Jenkins
 the_url: http://www.youtube.com/watch?v=Gd8OfAmKkMQ
 image_filename: promoted-builds.jpg
 ---
