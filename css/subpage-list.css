@@ -82,7 +82,7 @@
 
 /* Mobiles get a stacked version */
 
-@media (max-width: 480px) {
+@media (max-width: 568px) {
   .subpage-list ul {
     display: block;
   }

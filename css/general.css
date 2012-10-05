@@ -40,7 +40,7 @@ footer, .push {
   height: 100px;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 380px){
   .page {
     margin: 0 auto -154px;
   }

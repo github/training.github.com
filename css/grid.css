@@ -45,7 +45,7 @@
 .container .three-fifths    { width: 60%; }
 .container .four-fifths     { width: 80%; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
 
   /* Expand anything lower than .whole to full-width on smaller screens */
   .container .half,

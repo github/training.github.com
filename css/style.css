@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 568px){
   .trainer .content,
   .trainer .fifth .content {
     padding: 0 20px;
@@ -300,7 +300,7 @@ p.register {
   max-width: 120px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 568px){
   .video, .book, .other {
     text-align: center;
   }
@@ -343,7 +343,7 @@ p.register {
   width: 95%;
 }
 
-@media screen and (min-width: 361px) and (max-width: 480px){
+@media screen and (min-width: 361px) and (max-width: 568px){
   .pres-wrapper .inner-padding img {
     width: 36%;
     float: left;

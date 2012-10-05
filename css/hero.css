@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 568px){
   .overview .intro {
     font-size: .85em;
   }

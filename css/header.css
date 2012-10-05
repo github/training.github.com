@@ -117,7 +117,7 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
   #nav .content {
     margin-left: 0;
     margin-right: 0;

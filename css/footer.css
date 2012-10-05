@@ -27,7 +27,7 @@ footer .content {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   #footerlogo {
     float: none;
     margin-right: 0;
