@@ -1,6 +1,6 @@
 ---
 title: Mastering Git
-the_url: http://shop.oreilly.com/product/0636920017462.do
+the_url: http://bit.ly/ogitvid
 image_filename: mastering-git.jpg
 ---
 

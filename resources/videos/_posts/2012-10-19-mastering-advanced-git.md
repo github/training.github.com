@@ -1,6 +1,6 @@
 ---
 title: Mastering Advanced Git
-the_url: http://shop.oreilly.com/product/0636920024774.do
+the_url: http://bit.ly/ogitvid2
 image_filename: mastering-advanced-git.jpg
 ---
 

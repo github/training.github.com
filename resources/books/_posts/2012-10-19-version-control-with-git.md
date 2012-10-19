@@ -1,7 +1,7 @@
 ---
 title: Version Control with Git, 2nd Edition
 author: Jon Loeliger and Matthew McCullough
-the_url: http://www.amazon.com/dp/1449316387/ref=cm_sw_su_dp
+the_url: http://bit.ly/ogitbook
 image_filename: version-control-with-git.jpg
 ---
 
