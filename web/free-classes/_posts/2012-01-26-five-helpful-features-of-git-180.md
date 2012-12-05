@@ -5,6 +5,7 @@ the_date: Dec 7, 2012
 start_time: 1:00 p.m.
 end_time: 2:00 p.m.
 timezone: PST
+timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=224
 cost: Free
 registration_url: http://oreillynet.com/pub/e/2521
 tags: ['web-free']
