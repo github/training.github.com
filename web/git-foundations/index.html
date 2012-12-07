@@ -75,7 +75,7 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
               <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
               {{ class.start_time }}
               {% if class.end_time %} to {{ class.end_time }}{% endif %}
-              {% if class.timezone %}({{ class.timezone }}){% endif %}
+              {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
             </span>
           </div>
         </li>
