@@ -80,6 +80,9 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
           </div>
         </li>
       {% endfor %}
+      {% if site.tags.inperson-foundations[0] == null %}
+        <p>There are no scheduled in-person foundation classes at this time. Stay tuned for updates!</p>
+      {% endif %}
     </ul>
     <p>Private group events are available. Please <a href="{{ site.url }}/contact/">contact us</a> for more information.</p>
     {% if page.prerequisites %}
