@@ -73,11 +73,14 @@ subpage: advanced
               <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
               {{ class.start_time }}
               {% if class.end_time %} to {{ class.end_time }}{% endif %}
-              {% if class.timezone %}({{ class.timezone }}){% endif %}
+              {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
             </span>
           </div>
         </li>
       {% endfor %}
+      {% if site.tags.web-advanced[0] == null %}
+        <p>There are no scheduled web-based advanced classes at this time. Stay tuned for updates!</p>
+      {% endif %}
     </ul>
     <p>Private group events are available. Please <a href="{{ site.url }}/contact/">contact us</a> for more information.</p>
     {% if page.prerequisites %}
