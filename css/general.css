@@ -9,7 +9,6 @@ body {
   color: #555;
   font-size: 14px;
   line-height: 1.6em;
-  -webkit-font-smoothing: antialiased;
 }
 
 header, section, footer {
@@ -30,19 +29,23 @@ section.main {
 /* Sticky footer */
 
 .page {
+  clear: both;
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -100px;
+  margin-bottom: -100px;
 }
 
 footer, .push {
   height: 100px;
+  margin: 0;
+  clear: both;
+  position: relative;
 }
 
 @media screen and (max-width: 380px){
   .page {
-    margin: 0 auto -154px;
+    margin-bottom: -154px;
   }
   footer, .push {
     height: 154px;
