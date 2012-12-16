@@ -11,7 +11,7 @@ subpage: classes
         <p>GitHub offers free, short, topical online classes about GitHub, Git, and the union of these two technologies. We rotate through various topics every few months and are constantly looking to introduce new topics and concepts into the mix. <strong>Office Hours</strong> are free events following our free classes that allow any user of Git or GitHub to get answers directly from Git Experts.</p>
       </div>
       <ul class="resource-list class-list">
-        {% for class in site.categories.free-classes %}
+        {% for class in site.tags.web-free %}
           <li class="resource class">
             <div class="summary">
               <div class="actions">
@@ -32,11 +32,14 @@ subpage: classes
                 <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
                 {{ class.start_time }}
                 {% if class.end_time %} to {{ class.end_time }}{% endif %}
-                {% if class.timezone %}({{ class.timezone }}){% endif %}
+                {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
               </span>
             </div>
           </li>
         {% endfor %}
+      {% if site.tags.web-free[0] == null %}
+        <p>There are no scheduled web-based free classes at this time. Stay tuned for updates!</p>
+      {% endif %}
       </ul>
     </div>
   </div>
