@@ -1,6 +1,6 @@
 ---
 name: Tim Berglund
-avatar_url: https://secure.gravatar.com/avatar/ddf2d42eac63eb87e1542fc218dbfc86?s=420&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png
+avatar_url: http://en.gravatar.com/userimage/213653/d923878c655ee672c85e590ea7180c3f.jpg?size=420
 github: tlberglund
 twitter: tlberglund
 testimonial: Tim’s advanced Git at JavaZone was a perfect example of what a brilliant presenter can do—funny, inspirational & instantly useful.
