@@ -5,7 +5,6 @@ quotes = [
  { author: "Brad Armstrong", company: "Digital River", text: "Fantastic Git training with @matthewmccull today, a really polished pro. Get in on the next one!" },
  { author: "Brad Haydon", company: "Oakley, Inc.", text: "When Oakley decided to use Git as its primary version control system, training was a huge concern of ours. In an extremely short amount of time, Scott had our developers up and running, with absolutely no issues at all." },
  { author: "Bruce Tate", company: "President of RapidRed", text: "Matthew, this class was truly excellent. It may be the best online class I've ever attended. What you did is not easy with that tool suite, but you make it look so." },
- { author: "Peter Bell", company: "CTO, SystemsForge", text: "Excellent training. Nicely paced, good range of content. Really great." },
  { author: "Josh Long", company: "Developer Evangelist, SpringSource", text: "Matthew McCullough did a fantastic job during today's GitHub training! Highly recommended!" },
  { author: "Daniel Moroz", company: "Student Organizer, PennApps", text: "Of the 20 or so talks we had at PennApps, John's was the most lucid. He taught even advanced users new features while making sure that inexperienced folks didn't fall behind." },
  ];
