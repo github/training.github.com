@@ -1,7 +1,7 @@
 ---
 title: Get Better at Git - Applying Version Control to Publishing Workshop at O'Reilly
 location: New York Marriott Marquis 1535 Broadway, New York, New York 10036
-the_date: Feb 12rd, 2013
+the_date: Feb 12th, 2013
 start_time: 12:30pm
 end_time: 2:00pm
 timezone: EST
