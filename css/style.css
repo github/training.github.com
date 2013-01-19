@@ -140,6 +140,22 @@ ul {
   margin: 0;
 }
 
+.class-list{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+
+  -moz-box-direction: reverse;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  box-direction: reverse;    
+}
+
 .class-list .class {
   margin: 15px 0;
   padding: 0;
