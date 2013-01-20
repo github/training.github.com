@@ -11,7 +11,7 @@ subpage: classes
         <p>GitHub offers free, short, topical online classes about GitHub, Git, and the union of these two technologies. We rotate through various topics every few months and are constantly looking to introduce new topics and concepts into the mix. <strong>Office Hours</strong> are free events following our free classes that allow any user of Git or GitHub to get answers directly from Git Experts.</p>
       </div>
       <ul class="resource-list class-list">
-        {% for class in site.tags.web-free %}
+        {% for class in site.tags.web-free reversed %}
           <li class="resource class">
             <div class="summary">
               <div class="actions">
