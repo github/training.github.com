@@ -22,11 +22,11 @@ This uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layo
 
 ## CSS Grid
 
-The CSS grid that’s being used here is based on [one Coby is experimenting with](https://github.com/cobyism/gridism). The one on this site works essentially the same, with a couple of small differences. Here’s all you need to know to use the grid:
+The CSS grid used here is based on [one Coby is experimenting with](https://github.com/cobyism/gridism). The one on this site works essentially the same, with a couple of small differences. Here’s all you need to know to use the grid:
 
 - Each horizontal section of the page (100% browser width) will either be a `<header>`, `<section>`, or `<footer>` tag.
 - Within any horizontal page section, a `<div class="container">` will be a wrapped, centered row.
-- Within any container, you can use <div class="whole|half|quarter|three-quarters|fifth|two-fifths|three-fifths|four-fifths|golden-large|golden-small"> to control column widths.
+- Within any container, you can use `<div class="whole|half|quarter|three-quarters|fifth|two-fifths|three-fifths|four-fifths|golden-large|golden-small">` to control column widths.
 - Within any column `<div>` you can put a `class="content"` to give the column some padding so it has breathing space between other columns.
 
 If you have any questions for how this all works, drop ([@cobyism](https://github.com/cobyism)) a line.
