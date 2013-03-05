@@ -7,5 +7,5 @@ end_time: 12pm
 timezone: MST
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 registration_url: http://github-march2013.eventbrite.com/
-tags: ['web-foundations']
+tags: ['web-foundations', 'rss']
 ---

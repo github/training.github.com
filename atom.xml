@@ -15,13 +15,15 @@ layout: nil
  </author>
 
  {% for post in site.posts %}
- <entry>
-   <title>{{ post.title | xml_escape }}</title>
-   <link href="http://{{ site.domain }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://{{ site.domain }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
+   {% if post.tags.last == "rss" %}
+     <entry>
+       <title>{{ post.title | xml_escape }}</title>
+       <link href="http://{{ site.domain }}{{ post.url }}"/>
+       <updated>{{ post.date | date_to_xmlschema }}</updated>
+       <id>http://{{ site.domain }}{{ post.id }}</id>
+       <content type="html">{{ post.content | xml_escape }}</content>
+     </entry>
+   {% endif %}
  {% endfor %}
 
 </feed>
