@@ -8,7 +8,7 @@ timezone: MST
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: Free
 registration_url: https://www3.gotomeeting.com/register/414456582
-tags: ['web-free']
+tags: ['web-free', 'rss']
 ---
 
 Topic TBD

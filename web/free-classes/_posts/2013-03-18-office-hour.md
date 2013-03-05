@@ -8,7 +8,7 @@ timezone: MST
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: Free
 registration_url: https://www3.gotomeeting.com/register/208626222
-tags: ['web-free']
+tags: ['web-free', 'rss']
 ---
 
 Immediately following the free class, our trainers are available answer all of your getting-started, technical, workflow, or best-practices questions about Git and GitHub.
