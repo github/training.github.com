@@ -13,9 +13,8 @@ If you want to help out with development on this, here’s how:
 ```sh
 $ git clone git@github.com:github/training.github.com.git
 $ cd training.github.com
-$ jekyll
+$ script/bootstrap
 # => The site will now be viewable in your browser at http://localhost:4000
-# => It will also automagically regenerate the site with any changes you make
 ```
 
 This uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layouts, includes and other miscellany works, then check out the [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki).
