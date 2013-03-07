@@ -2,3 +2,5 @@ _site/
 .DS_Store
 .rbenv-version
 /vendor/gems/
+/bin/
+/.bundle/
