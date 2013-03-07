@@ -1,7 +1,5 @@
-source :rubygems
+source "https://rubygems.org"
 
-ruby '1.9.3'
-
-gem 'jekyll',       '~> 0.11.2'
+gem 'jekyll'
 gem 'RedCloth'
 gem 'rack-contrib', '~> 1.1.0'
