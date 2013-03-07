@@ -25,6 +25,19 @@
   margin: .5em 0 1em;
 }
 
+.hero .promo img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero .promo a {
+  color: #FFF799;
+}
+
+.hero .promo a:hover {
+  color: #fff255;
+}
+
 .hero .content {
   padding: 10px 20px;
 }
@@ -36,12 +49,12 @@
 }
 
 .overview .hero .content {
-  padding: 30px 20px;
+  padding: 30px 20px 0;
 }
 
 .overview .hero h2 {
   font-size: 1.8em;
-  margin: .83em 0;
+  margin: 0 0 .83em;
 }
 
 .overview .image {
