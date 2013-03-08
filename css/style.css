@@ -437,6 +437,7 @@ p.register {
 
 .try-git-banner {
   text-align: center;
+  margin: 20px 0;
   backgronud-color: #EFEFEF;
   background-image: -o-linear-gradient(#EFEFEF, #FCFCFC);
   background-image: -moz-linear-gradient(#EFEFEF, #FCFCFC);
@@ -446,6 +447,24 @@ p.register {
   -moz-box-shadow:    inset 0px 1px 5px 0 rgba(0,0,0,.2);
   -webkit-box-shadow: inset 0px 1px 5px 0 rgba(0,0,0,.2);
   box-shadow:         inset 0px 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.try-git-banner span, .try-git-banner a {
+  padding: 5px 12px;
+  line-height: 32px;
+}
+
+.try-git-banner span {
+  color: #666;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.try-git-banner a {
+  margin: 0 0 10px;
+}
+
+.try-git-banner img {
+  vertical-align: middle;
 }
 /* Utility classes */
 
