@@ -438,7 +438,7 @@ p.register {
 .try-git-banner {
   text-align: center;
   margin: 20px 0;
-  backgronud-color: #EFEFEF;
+  background-color: #EFEFEF;
   background-image: -o-linear-gradient(#EFEFEF, #FCFCFC);
   background-image: -moz-linear-gradient(#EFEFEF, #FCFCFC);
   background-image: -webkit-linear-gradient(#EFEFEF, #FCFCFC);
