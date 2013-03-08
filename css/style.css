@@ -466,6 +466,38 @@ p.register {
 .try-git-banner img {
   vertical-align: middle;
 }
+
+@media screen and (min-width: 460px){
+  .try-git-banner span, .try-git-banner a {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .container .content.try-git-banner {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .try-git-banner a {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .try-git-banner {
+    border-radius: 5px;
+  }
+  .try-git-banner span {
+    font-size: 28px;
+  }
+  .try-git-banner a {
+    font-size: 21px;
+  }
+}
+
 /* Utility classes */
 
 .align-left { text-align: left; }
