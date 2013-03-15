@@ -11,4 +11,4 @@ registration_url: https://www3.gotomeeting.com/register/317488798
 tags: ['web-free', 'rss']
 ---
 
-Topic TBD
+In this class, we will go over Git & GitHub basics.
