@@ -2,8 +2,8 @@
 title: Git & GitHub Foundations Workshop - Berlin
 location: Betahaus, Prinzessinnenstraße 19 D-10969 Berlin, Germany
 the_date: May 8th, 2013
-start_time: 10:00
-end_time: 15:00
+start_time: 10:00am
+end_time: 3:00pm
 timezone: CET
 timezone link: http://www.timeanddate.com/worldclock/difference.html?p1=37
 cost: Free
