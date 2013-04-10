@@ -20,7 +20,6 @@
   opacity: 0.7;
 }
 
-
 #logo a:hover {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
@@ -51,7 +50,7 @@ header {
 }
 
 header .container {
-  padding: 21px 0 16px;
+  padding: 24px 0 16px;
 }
 
 header .content {
