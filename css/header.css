@@ -2,15 +2,15 @@
 
 #logo {
   position: relative;
-  height: 25px;
-  width: 153px;
+  height: 30px;
+  width: 183px;
   font-size: 1em;
 }
 
 #logo a {
   display: block;
-  height: 25px;
-  width: 153px;
+  height: 30px;
+  width: 183px;
   text-indent: -999px;
   overflow: hidden;
   background: url('../img/gh-training-logo-1x.png') no-repeat;
