@@ -10,16 +10,6 @@
   display: none;
 }
 
-#logo img {
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  filter: alpha(opacity=70);
-  opacity: .7;
-  -webkit-transition: all .25s;
-  -moz-transition: all .25s;
-  -o-transition: all .25s;
-  -ms-transition: all .25s;
-  transition: all .25s;
-}
 
 #logo img:hover {
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
