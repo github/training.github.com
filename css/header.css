@@ -4,7 +4,8 @@
   position: relative;
   height: 30px;
   width: 183px;
-  font-size: 1em;
+  margin: 0 auto;
+  padding-top: 8px;
 }
 
 #logo a {
@@ -50,7 +51,7 @@ header {
 }
 
 header .container {
-  padding: 24px 0 16px;
+  padding: 22px 0 26px;
 }
 
 header .content {
@@ -117,6 +118,10 @@ nav ul {
 }
 
 @media screen and (max-width: 568px) {
+  #logo {
+    margin: 0 auto;
+  }
+
   #nav .content {
     margin-left: 0;
     margin-right: 0;
