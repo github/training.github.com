@@ -10,14 +10,15 @@ footer {
 
 #footerlogo {
   float: left;
-  width: 183px;
-  margin-top: 15px;
+  width: 116px;
+
+  margin: 15px 20px;
 }
 
 #footerlogo a {
   display: block;
   height: 30px;
-  width: 183px;
+  width: 116px;
   text-indent: -999px;
   overflow: hidden;
   background: url('../img/gh-logo-1x.png') no-repeat;
@@ -47,10 +48,11 @@ footer .content {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 568px) {
   #footerlogo {
     float: none;
-    margin-right: 0;
+    position: relative;
+    margin: 0 auto;
   }
   footer {
     text-align: center;
