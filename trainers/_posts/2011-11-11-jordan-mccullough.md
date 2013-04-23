@@ -7,4 +7,4 @@ testimonial: Jordan was able to help me through every one of my Git sticking poi
 testimonial_author: The Rich Web Experience Student
 ---
 
-Jordan McCullough brings the perspective of an HTML and Javascript developer to the training team. He can adeptly show students how to use Git in everyday web and front-end development.
+Jordan McCullough, a JavaScript and front-end developer by trade, has a passion for open source software and community-driven development. He enjoys applying his technical know-how and software development experience to crafting meaningful learning experiences with Git and GitHub Training.
