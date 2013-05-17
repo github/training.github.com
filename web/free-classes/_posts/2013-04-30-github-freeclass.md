@@ -11,4 +11,4 @@ registration_url: https://www4.gotomeeting.com/register/490050095
 tags: ['web-free', 'rss']
 ---
 
-**Topic: TBD**
+Discover the efficiencies and powerful control of pull requests, remotes, and branch tracking with pure Git command line operations.
