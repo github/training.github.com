@@ -10,7 +10,41 @@ footer {
 
 #footerlogo {
   float: left;
-  margin-right: 15px;
+  width: 116px;
+
+  margin: 15px 20px;
+}
+
+#footerlogo a {
+  display: block;
+  height: 30px;
+  width: 116px;
+  text-indent: -999px;
+  overflow: hidden;
+  background: url('../img/gh-logo-1x.png') no-repeat;
+
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  #footerlogo a {
+    background: url('../img/gh-logo-2x.png') no-repeat;
+    background-size: 116px 30px;
+  }
+}
+
+#footerlogo a:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
 }
 
 footer p {
@@ -27,10 +61,11 @@ footer .content {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 568px) {
   #footerlogo {
     float: none;
-    margin-right: 0;
+    position: relative;
+    margin: 0 auto;
   }
   footer {
     text-align: center;

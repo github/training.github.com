@@ -1,14 +1,14 @@
 ---
-title: Getting started with Git at NY CFUG
-location: TBD
-the_date: May 20, 2013
-start_time: ?:00am
-end_time: ?:00pm
+title: Learning Git with Peter Bell at NY CFUG
+location: 11 E 26th St, 8th Floor, New York, NY 10010
+the_date: May 28, 2013
+start_time: 6:30pm
+end_time: 8:00pm
 timezone: EDT
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=179
-cost: $150
-registration_url: http://TBD
+cost: Free
+registration_url: http://www.meetup.com/NYC-ColdFusion-Users-Group/events/107740362/
 tags: [inperson-special, rss]
 ---
 
-In just half an hour we'll get started with git. We'll look at how easy it is to set up a git repo, we'll cover "three stage thinking" in git, and will learn the basic syntax for adding, moving and removing files and creating and merging branches. If you want to follow along, bring a laptop and follow these instructions pre-class: http://teach.github.com/articles/github-class-prerequisites/
+Two back-to-back sessions: Getting Started with Git & Git Collaboration Patterns
