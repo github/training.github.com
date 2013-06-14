@@ -54,18 +54,15 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
       {% for class in site.tags.web-foundations reversed %}
         <li class="resource class small-class">
           <div class="summary">
-            <div class="text">
-              <h4>{{ class.title }}</h4>
-              <div class="description">
-                <p><span class="cost">{{ class.cost }}</span></p>
-              </div>
-            </div>
             <div class="actions">
               <p class="register">
                 <a href="{{ class.registration_url }}" class="button">Register Now</a>
               </p>
             </div>
-            <div class="clear"></div>
+            <h4>{{ class.title }}</h4>
+            <div class="description">
+              <p><span class="cost">{{ class.cost }}</span></p>
+            </div>
           </div>
           <div class="details">
             <span class="date">
