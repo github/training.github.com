@@ -1,7 +1,7 @@
 ---
 title: Git & GitHub Free Class
 location: Online
-the_date: July 12, 2013
+the_date: July 8, 2013
 start_time: 9:00 a.m.
 end_time: 10:00 a.m.
 timezone: MST
