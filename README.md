@@ -13,6 +13,7 @@ If you want to help out with development on this, here’s how:
 ```sh
 $ git clone git@github.com:github/training.github.com.git
 $ cd training.github.com
+$ script/setup
 $ script/server
 # => The site will now be viewable in your browser at http://localhost:4000
 ```
