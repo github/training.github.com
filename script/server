@@ -1,0 +1,5 @@
+#!/bin/sh
+
+script/update
+
+jekyll serve
