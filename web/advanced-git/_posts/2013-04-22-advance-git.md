@@ -7,7 +7,7 @@ end_time: 12pm
 timezone: MST
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: $145 per person
-registration_url: https://student.gototraining.com/r/5129117641404140288
+registration_url: http://www.eventbrite.com/event/7317612175
 tags: ['web-advanced', 'rss']
 ---
 
