@@ -8,5 +8,5 @@ timezone: EDT
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=207
 cost: Free
 registration_url: http://github-nc-state-u.eventbrite.com/
-tags:[inperson-special, rss]
+tags: [inperson-special, rss]
 ---
