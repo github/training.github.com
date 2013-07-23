@@ -6,5 +6,5 @@ start_time: 9:00 a.m.
 end_time: 4:00 p.m.
 timezone: http://www.timeanddate.com/worldclock/difference.html?p1=187
 registration_url: http://www.programutvikling.no/kurs/git-github-foundations/4029
-tags:
+tags: [inperson-special, rss]
 ---
