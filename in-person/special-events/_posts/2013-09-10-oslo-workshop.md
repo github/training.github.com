@@ -1,5 +1,5 @@
 ---
-title: Git & GitHub Foundations 
+title: Git & GitHub Foundations Workshop
 location: Oslo, Norway
 the_date: September 10, 2013
 start_time: 9:00 a.m.
