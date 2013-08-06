@@ -14,6 +14,7 @@ If you want to help out with development on this, here’s how:
 $ git clone git@github.com:github/training.github.com.git
 $ cd training.github.com
 $ script/bootstrap
+$ jekyll serve
 # => The site will now be viewable in your browser at http://localhost:4000
 ```
 
