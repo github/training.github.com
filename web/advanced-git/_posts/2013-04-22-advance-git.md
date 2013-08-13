@@ -1,13 +1,13 @@
 ---
-title: Advanced Git and GitHub July
+title: Advanced Git and GitHub, July
 location: Online
-the_date: July 2nd, 2013
+the_date: July 25th, 2013
 start_time: 9am
 end_time: 12pm
 timezone: MST
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: $145 per person
-registration_url: http://github-adv-july2013.eventbrite.com/
+registration_url: http://www.eventbrite.com/event/7317612175
 tags: ['web-advanced', 'rss']
 ---
 
