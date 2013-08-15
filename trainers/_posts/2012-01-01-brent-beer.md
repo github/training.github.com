@@ -7,4 +7,4 @@ testimonial: Brent's technical support of the students in the class made it twic
 testimonial_author: Online Student
 ---
 
-Brent Beer is an experienced rubyist with a passion for teaching Git to people of both technical and non-technical backrounds.
+Brent Beer is an experienced Rubyist with a passion for teaching Git to people of both technical and non-technical backrounds.
