@@ -1,5 +1,5 @@
 ---
-title: Advanced Git and GitHub, October
+title: Advanced GitHub and Git, October
 location: Online
 the_date: October 9, 2013
 start_time: 9am

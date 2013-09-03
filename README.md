@@ -1,6 +1,6 @@
 # GitHub Training Site
 
-This is the official website for the [GitHub Training Team](http://training.github.com), with information about upcoming events, classes, and resources to help you learn more about Git and GitHub.
+This is the official website for the [GitHub Training Team](http://training.github.com), with information about upcoming events, classes, and resources to help you learn more about GitHub and Git.
 
 ## Issues
 
