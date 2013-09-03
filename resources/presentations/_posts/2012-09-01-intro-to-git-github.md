@@ -1,5 +1,5 @@
 ---
-title: Intro to Git and GitHub
+title: Intro to GitHub and Git
 the_url: http://speakerdeck.com/u/matthewmccullough/p/intro-to-git-and-github
 image_filename: git-intro-matt.jpg
 author: Matthew McCullough

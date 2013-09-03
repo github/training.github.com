@@ -7,4 +7,4 @@ testimonial: Jordan was able to help me through every one of my Git sticking poi
 testimonial_author: The Rich Web Experience Student
 ---
 
-Jordan McCullough, a JavaScript and front-end developer by trade, has a passion for open source software and community-driven development. He enjoys applying his technical know-how and software development experience to crafting meaningful learning experiences with Git and GitHub Training.
+Jordan McCullough, a JavaScript and front-end developer by trade, has a passion for open source software and community-driven development. He enjoys applying his technical know-how and software development experience to crafting meaningful learning experiences with GitHub and Git Training.
