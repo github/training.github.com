@@ -1,13 +1,13 @@
 ---
 title: GitHub Office Hour
 location: Online
-the_date: August 26, 2013
+the_date: September 18, 2013
 start_time: 10:00 a.m.
 end_time: 11:00 a.m.
-timezone: MST
+timezone: MDT
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: Free
-registration_url: https://www4.gotomeeting.com/register/742707623
+registration_url: https://www4.gotomeeting.com/register/113945879
 tags: ['web-free', 'rss']
 ---
 
