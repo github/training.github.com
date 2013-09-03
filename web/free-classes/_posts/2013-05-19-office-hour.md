@@ -11,4 +11,4 @@ registration_url: https://www4.gotomeeting.com/register/742707623
 tags: ['web-free', 'rss']
 ---
 
-Immediately following the free class, our trainers are available answer all of your getting-started, technical, workflow, or best-practices questions about Git and GitHub.
+Immediately following the free class, our trainers are available answer all of your getting-started, technical, workflow, or best-practices questions about GitHub and Git.
