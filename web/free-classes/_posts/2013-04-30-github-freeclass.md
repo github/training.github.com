@@ -1,5 +1,5 @@
 ---
-title: Git & GitHub Free Class
+title: GitHub & Git Free Class
 location: Online
 the_date: September 18, 2013
 start_time: 9:00 a.m.
