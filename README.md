@@ -2,6 +2,10 @@
 
 This is the official website for the [GitHub Training Team](http://training.github.com), with information about upcoming events, classes, and resources to help you learn more about GitHub and Git.
 
+## Build Status
+
+[![Build Status](https://travis-ci.org/github/training.github.com.png)](https://travis-ci.org/github/training.github.com)
+
 ## Issues
 
 If you find any errors on the site, please feel free to report an issue using this project's [Issue tracker](https://github.com/github/training.github.com/issues).
