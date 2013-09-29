@@ -3,3 +3,8 @@ rvm:
   - 1.9.3
 script: bundle exec jekyll build
 install: bundle install
+
+# whitelist
+branches:
+  only:
+    - gh-pages
