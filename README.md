@@ -1,6 +1,6 @@
 # GitHub Training Site
 
-This is the official website for the [GitHub Training Team](http://training.github.com), with information about upcoming events, classes, and resources to help you learn more about GitHub and Git.
+This is the official website for the [GitHub Training Team](http://training.github.com). It contains a list of upcoming events, classes, and resources to help you learn more about GitHub and Git.
 
 ## Build Status
 
@@ -24,7 +24,7 @@ $ script/server
 If you want to pass arguments into `script/server` like `--watch` to do auto-file regeneration
 you can still do so by just passing in the arguments.
 
-This uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layouts, includes and other miscellany works, then check out the [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki).
+This uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layouts, includes and other miscellany works, check out the [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki).
 
 ## CSS Grid
 
