@@ -4,7 +4,7 @@ This is the official website for the [GitHub Training Team](http://training.gith
 
 ## Build Status
 
-[![Build Status](https://travis-ci.org/github/training.github.com.png)](https://travis-ci.org/github/training.github.com)
+[![Build Status](https://travis-ci.org/github/training.github.com.png?branch=gh-pages)](https://travis-ci.org/github/training.github.com)
 
 ## Issues
 
