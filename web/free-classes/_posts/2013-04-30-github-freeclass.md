@@ -11,4 +11,4 @@ registration_url: https://www4.gotomeeting.com/register/428157679
 tags: ['web-free', 'rss']
 ---
 
-**Topic: TBD**
+In this class, we will go over Git & GitHub basics: Day-to-day command line use and a showcase of GitHub.com's Web Flow.
