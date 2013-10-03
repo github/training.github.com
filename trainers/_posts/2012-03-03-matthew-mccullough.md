@@ -7,4 +7,4 @@ testimonial: Matthew, this class was truly excellent. It may be the best online 
 testimonial_author: Bruce Tate
 ---
 
-Matthew McCullough has many years of experience teaching GitHub and Git courses. He is a co-author of O’Reilly’s Git Master Class, with Tim Berglund. He authored DZone’s Git RefCard, as well as the Git modules in “Jenkins: The Deﬁnitive Guide”.
+Matthew McCullough has many years of experience teaching GitHub and Git courses. He is a co-author of O’Reilly’s Git Master Class, with Tim Berglund. He authored DZone’s Git RefCard, as well as the Git modules in “Jenkins: The Definitive Guide”.
