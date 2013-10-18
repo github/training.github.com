@@ -9,7 +9,7 @@ end_time: 11:00am
 timezone: MDT
 timezonelink: http://www.timeanddate.com/worldclock/difference.html?p1=75
 cost: Free
-registration_url: https://github.com
+registration_url: https://www4.gotomeeting.com/register/713193335
 tags: []
 ---
 
