@@ -1,0 +1,44 @@
+---
+layout: default
+subpage: private
+---
+
+<div class="container">
+  <div class="three-quarters">
+    <div class="content">
+      <ul class="resource-list class-list">
+          <li class="resource class">
+            <div class="summary">
+              <div class="actions">
+                <p class="cost">{{ page.cost }}</p>
+                <p class="register">
+                  <a href="{{ page.registration_url }}" class="button">Register Now</a>
+                </p>
+              </div>
+              {{ page.content | markdownify }}
+            </div>
+            <div class="details">
+              <span class="date">
+                <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+                {{ page.the_date }}
+              </span>
+              <span class="time">
+                <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
+                {{ page.start_time }}
+                {% if page.end_time %} to {{ page.end_time }}{% endif %}
+                {% if page.timezone %}(<a href="{{ page.timezonelink }}">{{ page.timezone }}</a>){% endif %}
+              </span>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="quarter">
+    <div class="content">
+      <div class="help-box">
+        <h4>GitHub Help</h4>
+        <p>If you just need a quick answer, GitHub’s <a href="http://help.github.com" target=_blank>help website</a> is an excellent resource to keep bookmarked. It covers a range of Git topics from basic setup, all the way through to advanced topics.</p>
+      </div>
+    </div>
+  </div>
+</div>
