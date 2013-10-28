@@ -8,3 +8,6 @@ install: bundle install
 branches:
   only:
     - gh-pages
+
+notifications:
+  email: matthew@github.com
