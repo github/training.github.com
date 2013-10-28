@@ -10,4 +10,4 @@ branches:
     - gh-pages
 
 notifications:
-  email: matthew@github.com
+  email: trainingteam@github.com
