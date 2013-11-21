@@ -11,4 +11,4 @@ registration_url: https://www4.gotomeeting.com/register/713193335
 tags: ['web-free', 'rss']
 ---
 
-**Topic:** TBD
+**Topic:** In this class, we will go over Git & GitHub basics: Day-to-day command line use and GitHub features to make the most out of your contributions with others!
