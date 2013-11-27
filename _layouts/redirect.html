@@ -1,11 +1,20 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url={{ page.redirect_url }}">
-  <title>GitHub Training</title>
-</head>
-<body style="">
+---
+layout:
+---
 
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>GitHub Training</title>
+		<noscript>
+		  <meta http-equiv="refresh" content="{{page.redirectdelay}};url={{page.redirecturl}}">
+		</noscript>
+	</head>
+	
+	<body onLoad="window.setTimeout(function(){window.location.href='{{page.redirecturl}}'},{{page.redirectdelay}})">
+		<p>This page has moved to {{page.redirecturl}}</p>
+	</body>
 </html>
+
+<html>

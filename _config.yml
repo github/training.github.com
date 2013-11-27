@@ -1,4 +1,4 @@
-exclude:  [ Gemfile, Gemfile.lock, Procfile, vendor, gems]
+exclude: [Gemfile, Gemfile.lock, Procfile, vendor, gems]
 gauges_id: 50235916613f5d4f9c000042
 google_analytics_id: UA-3769691-19
 
@@ -7,3 +7,16 @@ domain: training.github.com
 author: GitHub Training Team
 email: training@github.com
 title: GitHub Training
+
+# standard jekyll configuration
+
+permalink: /articles/:title
+pygments: true
+exclude: ['Rakefile', 'config.rb', 'README.md','gems']
+markdown: rdiscount
+
+github:
+    username: github/training.github.com
+
+disqus:
+    id: githubteachingmaterials
