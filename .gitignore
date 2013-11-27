@@ -1,7 +1,6 @@
 _site/
 .DS_Store
 /.rbenv-version
-/.ruby-version
 /vendor/gems/
 /bin/
 /.bundle/
