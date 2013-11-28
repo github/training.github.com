@@ -162,12 +162,18 @@ ul {
   margin: .25em 0;
 }
 
-
 .class .summary {
   border-bottom: 1px solid #DDD;
   -webkit-box-shadow: 0 1px 0 white;
   box-shadow: 0 1px 0 white;
   padding: 10px 12px;
+}
+.class .summary p{
+  clear: both;
+}
+
+.class .summary .text {
+  float: left;
 }
 
 .class .details {
@@ -290,6 +296,7 @@ p.register {
   display: inline-block;
   width: 80%;
 }
+
 
 .repo .name {
   font-size: 1.2em;
@@ -503,3 +510,4 @@ p.register {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+.clear { clear: both; }
