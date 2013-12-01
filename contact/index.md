@@ -5,11 +5,11 @@ title: GitHub Teaching  Contact
 description: A comprehensive set of course materials used to teach GitHub and Git.
 ---
 
-<div class="">
-  <div class="container center">
+<div class="container phone">
+  <div class="two-third">
     <h1>Talk to Us</h1>
 
-    <h2>We'd love to hear from you!</h2>
+    <!-- <h2>We'd love to hear from you!</h2> -->
     <p>We know your time is valuable, so just fire up your email and let us know what you're seeking-the training email address above will reach the entire Training team. We fly <strong>a great deal</strong>, however we promise that we'll get back to you as soon as we've got feet on the ground.</p>
 
     <ul class="boxes classes-text-color">
@@ -17,11 +17,12 @@ description: A comprehensive set of course materials used to teach GitHub and Gi
         <script type='text/javascript'>var b = z = new Array('m','ub.co','gith','ning@','trai');document.write("<a href='mailto:"+b[4]+z[3]+b[2]+b[1]+z[0]+"' class='email-button'>"+z[4]+b[3]+z[2]+b[1]+b[0]+"</a>");</script>
       </li>
     </ul>
-    
+  </div>
+  <div class="third">
   </div>
 </div>
 
-<div class="">
+<div class="dim-grad">
   <div class="container">
     <div class="two-third">
       <h4>What should you tell us?</h4>
@@ -43,7 +44,7 @@ description: A comprehensive set of course materials used to teach GitHub and Gi
   </div>
 </div>
 
-<div class="dim-solid">
+<div class="">
     <div class="container">
         <h2>Follow us on Twitter</h2>
           <p>The GitHub Training team post a steady flow of updates on the <a href="http://twitter.com/githubtraining">@GitHubTraining</a> Twitter feed, so you can stay up to date with the latest GitHub training events!</p>

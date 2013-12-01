@@ -5,47 +5,36 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
 
 
 
-<div class="container center pencil">
+<div class="container">
   <div class="two-third">
     <h1>Education from the experts</h1>
     <p>
       We love helping people just like you use GitHub and Git to collaborate and be more productive. No matter your level of experience, we've got something just for you.
     </p>
+
+    <ul class="boxes classes-text-color">
+      <li>
+        <a href="#free">Free</a>
+      </li>
+
+      <li>
+        <a href="#foundations">Foundations</a>
+      </li>
+
+      <li>
+        <a href="#advanced">Advanced</a>
+      </li>
+
+      <li>
+        <a href="#custom">Custom</a>
+      </li>
+    </ul>
   </div>
 
-  <ul class="boxes classes-text-color">
-    <li>
-      <a href="#free">Free</a>
-    </li>
-
-    <li>
-      <a href="#foundations">Foundations</a>
-    </li>
-
-    <li>
-      <a href="#advanced">Advanced</a>
-    </li>
-
-    <li>
-      <a href="#custom">Custom</a>
-    </li>
-  </ul>
+  <div class="third center"><div class="training-photo-01 border"></div></div>
 </div>
 
-<div class="container center">
-  <div class="two-third">
-    <p class="dim-text">What being said about GitHub's training...</p>
-    <blockquote>
-      <span>
-        Online git training today was phenomenal.
-      </span>
-      <div class="attribution">
-        <div class="author">David Bock</div>
-        <div class="company">Founder, Code Sherpas</div>
-      </div>
-    </blockquote>
-  </div>
-</div>
+
 
 <div class="hidden"><a name="free"></a></div>
 
@@ -346,41 +335,6 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
   </div>
 </div>
 
-
-
-<!-- <div class="container"> -->
-  <!-- <ul class="class-list">
-    {% for class in site.tags.inperson-advanced %}
-      <li class="resource class">
-        <div class="info">
-          <h4>{{ class.title }}</h4>
-          <span class="location">{{ class.location }}</span>
-          {{ class.content }}
-          <div class="details">
-              <span class="date">
-                  {{ class.the_date }}
-              </span>
-              <span class="time">
-                  {{ class.start_time }}
-                  {% if class.end_time %} to {{ class.end_time }}{% endif %}
-                  {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
-              </span>
-          </div>
-        </div>
-
-          <a href="{{ class.registration_url }}" class="button">
-            <div class="register">
-              Register for {{ class.cost }}
-            </div>
-          </a>
-      </li>
-    {% endfor %}
-    {% if site.tags.inperson-advanced[0] == null %}
-      <p>There are no scheduled in-person advanced classes at this time. Stay tuned for updates!</p>
-    {% endif %}
-  </ul> -->
-<!-- </div> -->
-
 <div class="hidden"><a name="custom"></a></div>
 
 <div class="dim-solid">
@@ -397,9 +351,17 @@ prerequisites: Basic knowledge about a version control system is recommended, wh
   </div>
 </div>
 
-<!-- <div class="dim-solid">
-  <div class="container">
-    <h4>GitHub Help</h4>
-    <p>If you just need a quick answer, GitHub's <a href="http://help.github.com" target=_blank>help website</a> is an excellent resource to keep bookmarked. It covers a range of Git topics from basic setup, all the way through to advanced topics.</p>
+<div class="">
+  <dim class="container">
+    <p class="dim-text">What being said about GitHub's training...</p>
+    <blockquote>
+      <span>
+        Online git training today was phenomenal.
+      </span>
+      <div class="attribution">
+        <div class="author">David Bock</div>
+        <div class="company">Founder, Code Sherpas</div>
+      </div>
+    </blockquote>
   </div>
-</div> -->
+</div>
