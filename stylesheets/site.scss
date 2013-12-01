@@ -21,11 +21,12 @@ html,body{
 }
 
 h1{
-
+  font-size: 3.5em;
+  font-weight: normal;
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2em;
     /*text-transform: uppercase;*/
     font-weight: normal;
     opacity: .8;
@@ -48,12 +49,52 @@ a{
         color: #000;
         text-decoration: underline;
     }
+
+    p &{
+      font-weight: bold;
+    }
+}
+
+.classes-text-color{
+  color: $attend-color;
+
+  a{
+    color: $attend-color;    
+  }
+}
+
+.boxes{
+  list-style-type: none;
+  margin: 2em 0 2em 0;
+  padding: 0;
+
+  li{
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+    /*background: rgba(0,0,0,.05);*/
+    border-radius: .25em;
+    display: inline-block;
+    padding: 1em 0;
+    width: 12em;
+    margin-right: 2em;
+
+/*    &:nth-child(2n-1):after{
+      content: "after";
+      display: inline-block;
+      height: 2em;
+      width: 2em;
+      border-bottom: solid 1px #333;
+    }*/
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
 }
 
 header{
     /*position: fixed;*/
     display: block;
-    float: left;
+    /*float: left;*/
     /*background: rgba(255,255,255,.95);*/
     height: 5em;
     margin-top: 10em;
@@ -82,14 +123,14 @@ header{
     nav{
         position: absolute;
         right: 0;
-        top: 2em;
+        top: 2.3em;
+        font-size: .9em;
 
         a{
             display: inline-block;
             height: 1em;
             text-decoration: none;
             color: #333;
-            font-size: .5;
             font-weight: bold;
 
             margin-right: 1.5em;
@@ -106,11 +147,9 @@ header{
 }
 
 .container{
-    clear: left;
     margin: auto auto;
-    padding: 3em 0 2em 0;
+    padding: 2em 0;
     width: 67em;
-    text-align: center;
 
     h2{
         text-align: center;
@@ -119,7 +158,7 @@ header{
     h2+p{
         width: 75%;
         text-align: center;
-        margin: 0 auto 2em auto;
+        margin: 2em auto 0 auto;
         opacity: .7;
     }
 
@@ -211,13 +250,18 @@ header{
 }
 
 
+.pencil{
+  background: url(/images/background/pencil.jpg) no-repeat;
+  background-position: bottom center;
+  background-size: 60%;
+  padding-bottom: 5em;
+}
+
 .panel{
-    h1{
-        text-transform: uppercase;
-        &+p{
-            font-size: .9em;
-        }
-    }
+    margin: 0;
+    padding: 3em;
+    text-align: center;
+
 
     a{
         .take-action{
@@ -243,17 +287,7 @@ header{
         border-bottom: dotted 1px rgba(0,0,0,.3);
     }
 
-}
 
-.panel{
-    margin: 0;
-    padding: 3em;
-    text-align: center;
-
-/*    p{
-        text-align: center;
-        color: rgba(255,255,255,.8);
-    }*/
 
     h2{
         text-align: center;
@@ -377,9 +411,18 @@ ul.section-selector{
     }
 }
 
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
 
+.dim-text{
+  color: #aaa;
+}
 .dim-solid{
-    background: #f7f7f7; /* Old browsers */
+  background: #f7f7f7; /* Old browsers */
 }
 .dim-grad{
     background: #f7f7f7; /* Old browsers */
@@ -397,7 +440,7 @@ ul.section-selector{
     display: inline-block;
     background: #f7f7f7;
     padding: 1em;
-    /*margin-bottom: 3em;*/
+    margin: 2em 0;
     border-radius: .25em;
     box-shadow: 0 0 0 1px #ededed, 0 -.1em .1em #fff, 0 .1em .1em #555;
 }
@@ -596,6 +639,51 @@ ul.class-list{
     }
 }
 
+
+blockquote{
+  text-align: center;
+
+  span{
+    line-height: 1.2em;
+    opacity: 1;
+    font-size: 1.25em;
+
+    &:before{
+      content: '"';
+      /*display: inline-block;*/
+      position: absolute;
+      font-size: 4em;
+      /*line-height: 1.33em;*/
+      margin-left: -.35em;
+      color: #eee;
+    }
+
+    &:after{
+      content: '"';
+      /*display: inline-block;*/
+      position: absolute;
+      font-size: 4em;
+      line-height: .85em;
+      color: #eee;
+    }
+  }
+
+  .attribution{
+    padding: .5em .5em 0 13em;
+    color: #aaa;
+
+    .author{
+      display: inline-block;
+
+      &:before{
+        content: "\2014";
+      }
+    }
+    .company{
+      display: inline-block;
+    }
+  }
+}
 
 
 

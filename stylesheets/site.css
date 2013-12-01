@@ -12,8 +12,12 @@ html, body {
   margin-top: -5em;
   height: 100%; }
 
+h1 {
+  font-size: 3.5em;
+  font-weight: normal; }
+
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   /*text-transform: uppercase;*/
   font-weight: normal;
   opacity: .8;
@@ -32,11 +36,40 @@ a {
   a:hover {
     color: #000;
     text-decoration: underline; }
+  p a {
+    font-weight: bold; }
+
+.classes-text-color {
+  color: #6db6a2; }
+  .classes-text-color a {
+    color: #6db6a2; }
+
+.boxes {
+  list-style-type: none;
+  margin: 2em 0 2em 0;
+  padding: 0; }
+  .boxes li {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    /*background: rgba(0,0,0,.05);*/
+    border-radius: .25em;
+    display: inline-block;
+    padding: 1em 0;
+    width: 12em;
+    margin-right: 2em;
+    /*    &:nth-child(2n-1):after{
+          content: "after";
+          display: inline-block;
+          height: 2em;
+          width: 2em;
+          border-bottom: solid 1px #333;
+        }*/ }
+    .boxes li:last-child {
+      margin-right: 0; }
 
 header {
   /*position: fixed;*/
   display: block;
-  float: left;
+  /*float: left;*/
   /*background: rgba(255,255,255,.95);*/
   height: 5em;
   margin-top: 10em;
@@ -60,13 +93,13 @@ header {
   header nav {
     position: absolute;
     right: 0;
-    top: 2em; }
+    top: 2.3em;
+    font-size: .9em; }
     header nav a {
       display: inline-block;
       height: 1em;
       text-decoration: none;
       color: #333;
-      font-size: .5;
       font-weight: bold;
       margin-right: 1.5em; }
       header nav a:last-child {
@@ -75,17 +108,15 @@ header {
         text-decoration: none; }
 
 .container {
-  clear: left;
   margin: auto auto;
-  padding: 3em 0 2em 0;
-  width: 67em;
-  text-align: center; }
+  padding: 2em 0;
+  width: 67em; }
   .container h2 {
     text-align: center; }
   .container h2 + p {
     width: 75%;
     text-align: center;
-    margin: 0 auto 2em auto;
+    margin: 2em auto 0 auto;
     opacity: .7; }
   .container .third {
     width: 33.333%;
@@ -150,35 +181,32 @@ header {
     margin: 0;
     margin-bottom: 0; }
 
-.panel h1 {
-  text-transform: uppercase; }
-  .panel h1 + p {
-    font-size: .9em; }
-.panel a .take-action {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 1.5em;
-  border: solid 2px #fff;
-  opacity: .8;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 2em;
-  display: inline-block;
-  color: #fff; }
-.panel a.link:after {
-  content: "\00bb";
-  display: inline-block;
-  margin-left: .25em; }
-.panel .date {
-  border-bottom: dotted 1px rgba(0, 0, 0, 0.3); }
+.pencil {
+  background: url(/images/background/pencil.jpg) no-repeat;
+  background-position: bottom center;
+  background-size: 60%;
+  padding-bottom: 5em; }
 
 .panel {
   margin: 0;
   padding: 3em;
-  text-align: center;
-  /*    p{
-          text-align: center;
-          color: rgba(255,255,255,.8);
-      }*/ }
+  text-align: center; }
+  .panel a .take-action {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    border: solid 2px #fff;
+    opacity: .8;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2em;
+    display: inline-block;
+    color: #fff; }
+  .panel a.link:after {
+    content: "\00bb";
+    display: inline-block;
+    margin-left: .25em; }
+  .panel .date {
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.3); }
   .panel h2 {
     text-align: center;
     color: rgba(255, 255, 255, 0.9); }
@@ -254,6 +282,15 @@ ul.section-selector {
     ul.section-selector li a:hover div {
       background: white; }
 
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.dim-text {
+  color: #aaa; }
+
 .dim-solid {
   background: #f7f7f7;
   /* Old browsers */ }
@@ -281,7 +318,7 @@ ul.section-selector {
   display: inline-block;
   background: #f7f7f7;
   padding: 1em;
-  /*margin-bottom: 3em;*/
+  margin: 2em 0;
   border-radius: .25em;
   box-shadow: 0 0 0 1px #ededed, 0 -.1em .1em #fff, 0 .1em .1em #555; }
 
@@ -425,6 +462,37 @@ ul.class-list {
     /*background: blue;*/
     width: 2%;
     border: none; }
+
+blockquote {
+  text-align: center; }
+  blockquote span {
+    line-height: 1.2em;
+    opacity: 1;
+    font-size: 1.25em; }
+    blockquote span:before {
+      content: '"';
+      /*display: inline-block;*/
+      position: absolute;
+      font-size: 4em;
+      /*line-height: 1.33em;*/
+      margin-left: -.35em;
+      color: #eee; }
+    blockquote span:after {
+      content: '"';
+      /*display: inline-block;*/
+      position: absolute;
+      font-size: 4em;
+      line-height: .85em;
+      color: #eee; }
+  blockquote .attribution {
+    padding: .5em .5em 0 13em;
+    color: #aaa; }
+    blockquote .attribution .author {
+      display: inline-block; }
+      blockquote .attribution .author:before {
+        content: "\2014"; }
+    blockquote .attribution .company {
+      display: inline-block; }
 
 .hidden {
   visibility: hidden;
