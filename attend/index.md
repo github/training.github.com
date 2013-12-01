@@ -1,5 +1,5 @@
 ---
-layout: web
+layout: page
 prerequisites: Basic knowledge about a version control system is recommended, whether that be Subversion, CVS, Perforce, StarTeam, SourceSafe, ClearCase or any similar product.
 ---
 
