@@ -69,25 +69,25 @@ a{
   padding: 0;
 
   li{
-    box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-    /*background: rgba(0,0,0,.05);*/
-    border-radius: .25em;
     display: inline-block;
-    padding: 1em 0;
-    width: 12em;
     margin-right: 2em;
-
-/*    &:nth-child(2n-1):after{
-      content: "after";
-      display: inline-block;
-      height: 2em;
-      width: 2em;
-      border-bottom: solid 1px #333;
-    }*/
 
     &:last-child{
       margin-right: 0;
     }
+
+    a{
+      display: block;
+      box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+      border-radius: .25em;
+      display: inline-block;
+      padding: 1em 0;
+      width: 12em;
+    }
+  }
+
+  &.classes-text-color a{
+    box-shadow: 0 0 0 1px $attend-color;
   }
 }
 
