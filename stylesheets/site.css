@@ -491,6 +491,28 @@ blockquote {
     blockquote .attribution .company {
       display: inline-block; }
 
+.team {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: table; }
+  .team li {
+    display: table-cell;
+    vertical-align: top;
+    margin-bottom: 2em; }
+    .team li p {
+      padding: 0 2em;
+      text-align: justify; }
+  .team .social a img {
+    /*        background: #efefef;
+            border-radius: 50%;*/
+    padding: .5em; }
+  .team .avatar {
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto; }
+
 .hidden {
   visibility: hidden;
   display: block;

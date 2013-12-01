@@ -686,6 +686,45 @@ blockquote{
 }
 
 
+.team{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+
+  li{
+    display: table-cell;
+    vertical-align: top;
+    margin-bottom: 2em;
+
+    p{
+      padding: 0 2em;
+      text-align: justify;
+    }
+  }
+
+  .bio{
+
+  }
+
+  .social{
+    a{
+      img{
+/*        background: #efefef;
+        border-radius: 50%;*/
+        padding: .5em;
+      }
+    }
+  }
+
+  .avatar{
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    margin: 0 auto;
+  }
+}
+
 
 .hidden{
     visibility: hidden;
