@@ -11,9 +11,10 @@
       <div class="container">
           <a href="/"><span class="logo-github">GitHub Teaching</span></a>
           <nav>
-              <a href="/attend"><div class="">Attend</div></a>
-              <a href="/share"><div class="">Share</div></a>
-              <a href="/contact"><div class="">Contact</div></a>
+              <a href="/attend"><div class="">Our Classes</div></a>
+              <a href="/share"><div class="">Learning Materials </div></a>
+              <a href="/team"><div class="">The Team</div></a>
+              <a href="/contact"><div class="">Talk to Us</div></a>
           </nav>
       </div>
     </header>
