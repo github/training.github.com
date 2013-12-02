@@ -1,20 +1,17 @@
 ---
 layout:
-redirectdelay: 100
+redirectdelay: 0
 ---
 
 <!DOCTYPE HTML>
 <html>
 	<head>
         <meta charset="UTF-8">
-        <title>GitHub Training</title>
-		<noscript>
-		  <meta http-equiv="refresh" content="{{page.redirectdelay}};url={{page.redirecturl}}">
-		</noscript>
+	    <title>GitHub Training</title>
+		<meta http-equiv="refresh" content="{{page.redirectdelay}};url={{page.redirecturl}}">
 	</head>
 	
-	<body onLoad="window.setTimeout(function(){window.location.href='{{page.redirecturl}}'},{{page.redirectdelay}})">
-		<p>This page has moved to {{page.redirecturl}}</p>
+	<body>
 	</body>
 </html>
 
