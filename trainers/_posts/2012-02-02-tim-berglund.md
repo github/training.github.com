@@ -7,4 +7,4 @@ testimonial: Tim’s advanced Git at JavaZone was a perfect example of what a br
 testimonial_author: Torstein Krause
 ---
 
-Tim Berglund, a well-known conference speaker, leverages his broad experience to make GitHub’s training exceptional. He co-authored O’Reilly’s Git Master Class with Matthew McCullough, and continues to deliver the high quality that GitHub Training’s customers expect.
+Tim Berglund, a well-known conference speaker, leverages his broad experience to make GitHub's training exceptional. He co-authored O'Reilly's Git Master Class with Matthew McCullough, and continues to deliver the high quality that GitHub Training's customers expect.
