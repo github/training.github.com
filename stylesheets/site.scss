@@ -21,7 +21,7 @@ html,body{
 }
 
 h1{
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: normal;
 }
 
@@ -35,10 +35,9 @@ h2{
 }
 
 p{
-    /*font-size: 1.2em;*/
-    line-height: 1.8em;
+    line-height: 1.5em;
     margin-bottom: 1em;
-    /*color: #000;*/
+    opacity: .9;
 }
 
 a{
@@ -71,6 +70,7 @@ a{
   li{
     display: inline-block;
     margin-right: 2em;
+    text-align: center;
 
     &:last-child{
       margin-right: 0;
@@ -78,16 +78,20 @@ a{
 
     a{
       display: block;
+      color: #fff;
+      font-size: .8em;
       box-shadow: 0 0 0 1px rgba(0,0,0,.1);
       border-radius: .25em;
       display: inline-block;
       padding: 1em 0;
-      width: 12em;
+      width: 10em;
     }
   }
 
   &.classes-text-color a{
     box-shadow: 0 0 0 1px $attend-color;
+    background: $attend-color;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
   }
 }
 
@@ -151,6 +155,8 @@ header{
     padding: 2em 0;
     width: 67em;
 
+    display: table;
+
     h2{
         text-align: center;
     }
@@ -163,19 +169,45 @@ header{
     }
 
     .third{
-        width: 33.333%;
-        display: inline-block;
+        width: 33.33%;
+        display: table-cell;
     }
 
     .two-third{
-      width: 66.666%;
-      display: inline-block; 
+      width: 66.66%;
+      display: table-cell; 
     }
 
     .half{
         width: 50%;
         display: inline-block;
     }
+
+    .divider-right{
+      border-right: solid 1px blue;
+
+    }
+}
+
+.training-photo-01{
+  background: url(/images/training-01.jpg) no-repeat;
+  background-size: cover;
+  width: 18em;
+  height: 12em;
+  margin: 0 0 0 2em;
+  position: absolute;
+
+  transform:rotate(3deg);
+  -ms-transform:rotate(3deg);
+  -webkit-transform:rotate(3deg);
+}
+
+.border{
+  box-shadow: 0 0 0 .5em #fafafa, 0 0 0 .6em #e3e3e3, .5em .7em .9em #e7e7e7;
+}
+
+.twist{
+
 }
 
 .banner{
@@ -253,8 +285,14 @@ header{
 .pencil{
   background: url(/images/background/pencil.jpg) no-repeat;
   background-position: bottom center;
-  background-size: 60%;
-  padding-bottom: 5em;
+  background-size: 75%;
+  text-align: right;
+}
+
+.phone{
+  background: url(/images/background/phone.jpg) no-repeat;
+  background-position: top right;
+  background-size: 33%;
 }
 
 .panel{
@@ -593,6 +631,9 @@ ul.class-list{
     border-spacing:0;
     border-collapse:collapse;
     text-align: left;
+    width: 100%;
+
+    margin-top: 1em;
 
     th{
         font-weight: normal;
@@ -618,11 +659,13 @@ ul.class-list{
         padding: 0;
         vertical-align: top;
 
+        opacity: .6;
+
         ul{
             /*list-style-type: circle;*/
             /*list-style-position: inside;*/
             margin: 1.25em;
-            opacity: .6;
+            
 
             li{
                 line-height: 1.5em;
@@ -652,7 +695,7 @@ blockquote{
       content: '"';
       /*display: inline-block;*/
       position: absolute;
-      font-size: 4em;
+      font-size: 2em;
       /*line-height: 1.33em;*/
       margin-left: -.35em;
       color: #eee;
@@ -662,15 +705,20 @@ blockquote{
       content: '"';
       /*display: inline-block;*/
       position: absolute;
-      font-size: 4em;
+      font-size: 2em;
       line-height: .85em;
       color: #eee;
     }
   }
 
   .attribution{
-    padding: .5em .5em 0 13em;
+    padding: .5em 0;
     color: #aaa;
+    font-size: .8em;
+
+    p{
+      text-align: left;
+    }
 
     .author{
       display: inline-block;
@@ -693,13 +741,13 @@ blockquote{
   display: table;
 
   li{
-    display: table-cell;
+    display: inline-block !important;
     vertical-align: top;
     margin-bottom: 2em;
 
     p{
       padding: 0 2em;
-      text-align: justify;
+      text-align: left;
     }
   }
 

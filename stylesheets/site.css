@@ -13,7 +13,7 @@ html, body {
   height: 100%; }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: normal; }
 
 h2 {
@@ -25,10 +25,9 @@ h2 {
   margin-bottom: .5em; }
 
 p {
-  /*font-size: 1.2em;*/
-  line-height: 1.8em;
+  line-height: 1.5em;
   margin-bottom: 1em;
-  /*color: #000;*/ }
+  opacity: .9; }
 
 a {
   text-decoration: none;
@@ -50,18 +49,23 @@ a {
   padding: 0; }
   .boxes li {
     display: inline-block;
-    margin-right: 2em; }
+    margin-right: 2em;
+    text-align: center; }
     .boxes li:last-child {
       margin-right: 0; }
     .boxes li a {
       display: block;
+      color: #fff;
+      font-size: .8em;
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       border-radius: .25em;
       display: inline-block;
       padding: 1em 0;
-      width: 12em; }
+      width: 10em; }
   .boxes.classes-text-color a {
-    box-shadow: 0 0 0 1px #6db6a2; }
+    box-shadow: 0 0 0 1px #6db6a2;
+    background: #6db6a2;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
 
 header {
   /*position: fixed;*/
@@ -107,7 +111,8 @@ header {
 .container {
   margin: auto auto;
   padding: 2em 0;
-  width: 67em; }
+  width: 67em;
+  display: table; }
   .container h2 {
     text-align: center; }
   .container h2 + p {
@@ -116,14 +121,30 @@ header {
     margin: 2em auto 0 auto;
     opacity: .7; }
   .container .third {
-    width: 33.333%;
-    display: inline-block; }
+    width: 33.33%;
+    display: table-cell; }
   .container .two-third {
-    width: 66.666%;
-    display: inline-block; }
+    width: 66.66%;
+    display: table-cell; }
   .container .half {
     width: 50%;
     display: inline-block; }
+  .container .divider-right {
+    border-right: solid 1px blue; }
+
+.training-photo-01 {
+  background: url(/images/training-01.jpg) no-repeat;
+  background-size: cover;
+  width: 18em;
+  height: 12em;
+  margin: 0 0 0 2em;
+  position: absolute;
+  transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg); }
+
+.border {
+  box-shadow: 0 0 0 .5em #fafafa, 0 0 0 .6em #e3e3e3, .5em .7em .9em #e7e7e7; }
 
 .banner {
   margin-top: -5em;
@@ -181,8 +202,13 @@ header {
 .pencil {
   background: url(/images/background/pencil.jpg) no-repeat;
   background-position: bottom center;
-  background-size: 60%;
-  padding-bottom: 5em; }
+  background-size: 75%;
+  text-align: right; }
+
+.phone {
+  background: url(/images/background/phone.jpg) no-repeat;
+  background-position: top right;
+  background-size: 33%; }
 
 .panel {
   margin: 0;
@@ -428,7 +454,9 @@ ul.class-list {
 .details {
   border-spacing: 0;
   border-collapse: collapse;
-  text-align: left; }
+  text-align: left;
+  width: 100%;
+  margin-top: 1em; }
   .details th {
     font-weight: normal;
     padding: 1em 0 0 0;
@@ -445,12 +473,12 @@ ul.class-list {
   .details td {
     margin: 0;
     padding: 0;
-    vertical-align: top; }
+    vertical-align: top;
+    opacity: .6; }
     .details td ul {
       /*list-style-type: circle;*/
       /*list-style-position: inside;*/
-      margin: 1.25em;
-      opacity: .6; }
+      margin: 1.25em; }
       .details td ul li {
         line-height: 1.5em;
         font-size: .9em;
@@ -470,7 +498,7 @@ blockquote {
       content: '"';
       /*display: inline-block;*/
       position: absolute;
-      font-size: 4em;
+      font-size: 2em;
       /*line-height: 1.33em;*/
       margin-left: -.35em;
       color: #eee; }
@@ -478,12 +506,15 @@ blockquote {
       content: '"';
       /*display: inline-block;*/
       position: absolute;
-      font-size: 4em;
+      font-size: 2em;
       line-height: .85em;
       color: #eee; }
   blockquote .attribution {
-    padding: .5em .5em 0 13em;
-    color: #aaa; }
+    padding: .5em 0;
+    color: #aaa;
+    font-size: .8em; }
+    blockquote .attribution p {
+      text-align: left; }
     blockquote .attribution .author {
       display: inline-block; }
       blockquote .attribution .author:before {
@@ -497,12 +528,12 @@ blockquote {
   padding: 0;
   display: table; }
   .team li {
-    display: table-cell;
+    display: inline-block !important;
     vertical-align: top;
     margin-bottom: 2em; }
     .team li p {
       padding: 0 2em;
-      text-align: justify; }
+      text-align: left; }
   .team .social a img {
     /*        background: #efefef;
             border-radius: 50%;*/
