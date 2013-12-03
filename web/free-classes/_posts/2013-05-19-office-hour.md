@@ -11,5 +11,8 @@ registration_url: https://www4.gotomeeting.com/register/110866559
 tags: ['web-free', 'rss']
 ---
 
-Immediately following the free class, our trainers are available to answer all of your getting-started, technical, workflow, or best practice questions about GitHub and Git.
+<!-- New design does not require description here. Possibly in YAML.
+<!--
+    Immediately following the free class, our trainers are available to answer all of your getting-started, technical, workflow, or best practice questions about GitHub and Git.
+-->
 
