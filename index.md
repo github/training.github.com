@@ -6,7 +6,7 @@ description: A comprehensive set of course materials used to teach GitHub and Gi
 ---
 
 
-<div class="panel attend">
+<div class="attend">
     <div class="container content center">
         <h1>Join a learning event</h1>
 
@@ -57,7 +57,7 @@ description: A comprehensive set of course materials used to teach GitHub and Gi
 </div>
 -->
 
-<div class="panel share">
+<div class="share">
     <div class="container content">
         <h1>High Quality Resources</h1>
         <p>We love helping people use GitHub and Git 
@@ -73,7 +73,7 @@ description: A comprehensive set of course materials used to teach GitHub and Gi
 </div>
 
 
-<div class="panel contact">
+<div class="contact">
     <div class="container content">
         <h1>Get in touch</h1>
         <p>We love hearing from people, so if you have any questions about GitHub's training products and services, let us know.</p>
