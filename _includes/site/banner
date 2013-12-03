@@ -1,0 +1,48 @@
+<div class="banner {{ page.banner }}">
+    <div class="center-center">
+        
+
+        <div class="container">
+            <hgroup>
+            {% if page.tagline %}
+                <h1>{{ page.tagline }}</h1>
+                <p>{{ page.preamble }}</p>
+            {% else %}
+                <h1>Education from<br> the experts</h1>
+                <p>
+                    Join us for a <a href="#" class="attend-bubble">class</a>,
+                    grab some open source <a href="#" class="share-bubble">resources</a> or 
+                    get in <a href="#" class="contact-bubble">contact</a>.
+                </p>
+            {% endif %}
+            </hgroup>
+        </div>
+        <!-- 
+        
+        <div class="bubble-container">
+            <div class="bubble">
+                <a href="/attend">
+                    <span class="icon attend"></span>
+                    <h3>Attend</h3>
+                    <p>Scheduled workshops and public events</p>
+                </a>
+            </div>
+
+            <div class="bubble">
+                <a href="/share">
+                    <span class="icon share"></span>
+                    <h3>Share</h3>
+                    <p>All materials are free and open source</p>
+                </a>
+            </div>
+
+            <div class="bubble">
+                <a href="/contact">
+                    <span class="icon contact"></span>
+                    <h3>Contact</h3>
+                    <p>Customized training and scheduling</p>
+                </a>
+            </div>
+        </div> -->
+    </div>
+</div>

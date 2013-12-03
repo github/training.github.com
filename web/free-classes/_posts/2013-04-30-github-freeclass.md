@@ -11,4 +11,7 @@ registration_url: https://www4.gotomeeting.com/register/721305727
 tags: ['web-free', 'rss']
 ---
 
-**Topic:** TBD
+<!-- New design does not require description here. Possibly in YAML.
+<!--
+    **Topic:** TBD
+-->

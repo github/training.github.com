@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>{% if page.title %}{{ page.title }} : {% endif %}{{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=false;">
+    <link rel="stylesheet" href="/stylesheets/site.css">
+    </head>
+
+  <body class="{{ page.layout }}">    
+    <header>
+      <div class="container">
+          <a href="/"><span class="logo-github">GitHub Teaching</span></a>
+          <nav>
+              <a href="/attend"><div class="">Our Classes</div></a>
+              <a href="/share"><div class="">Learning Materials </div></a>
+              <a href="/team"><div class="">The Team</div></a>
+              <a href="/contact"><div class="">Talk to Us</div></a>
+          </nav>
+      </div>
+    </header>
+

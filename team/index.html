@@ -1,0 +1,83 @@
+---
+layout: page
+prerequisites: Basic knowledge about a version control system is recommended, whether that be Subversion, CVS, Perforce, StarTeam, SourceSafe, ClearCase or any similar product.
+---
+
+<div class="container center">
+  <div class="two-third">
+    <h1>Meet your trainers</h1>
+    <p>
+      Meet the people who will help you succeed.
+    </p>
+  </div>
+</div>
+
+
+<div class="dim-solid">
+  <div class="container center">
+    <ul class="team">
+      {% for trainer in site.categories.trainers %}
+        <li class="third">
+          <img src="{{ trainer.avatar_url }}" class="avatar" alt="{{ trainer.name }}, GitHub Trainer">
+          <h3>{{ trainer.name }}</h3>
+
+          <span class="social">
+            <a href="https://github.com/{{ trainer.github }}">
+                <img src="{{ site.url }}/img/octocat-icon.png" width="16px" height="16px" alt="View {{ trainer.github }}’s code on GitHub">
+            </a>
+            <a href="http://twitter.com/{{ trainer.twitter }}">
+                <img src="{{ site.url }}/img/twitter-icon.png" width="16px" height="16px" alt="Follow {{ trainer.github }} on Twitter">
+            </a>
+          </span>
+
+            <p class="bio">{{ trainer.content | markdownify }}</p>
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<!-- <form class="expander">
+{% for trainer in site.categories.trainers %}
+<label>
+  <img src="{{ trainer.avatar_url }}" class="avatar" alt="{{ trainer.name }}, GitHub Trainer">
+  <input type="radio" name="test" value="one">
+    <h3>{{ trainer.name }}</h3>
+  </input>
+</label>
+{% endfor %}
+</form> -->
+
+
+
+
+
+<!-- {% for trainer in site.categories.trainers %} -->
+<!-- 
+<img src="{{ trainer.avatar_url }}" class="avatar" alt="{{ trainer.name }}, GitHub Trainer">
+
+<h3>
+{{ trainer.name }}
+
+<span class="social">
+    <a href="https://github.com/{{ trainer.github }}">
+        <img src="{{ site.url }}/img/octocat-icon.png" width="16px" height="16px" alt="View {{ trainer.github }}’s code on GitHub">
+    </a>
+    <a href="http://twitter.com/{{ trainer.twitter }}">
+        <img src="{{ site.url }}/img/twitter-icon.png" width="16px" height="16px" alt="Follow {{ trainer.github }} on Twitter">
+    </a>
+</span>
+
+<p class="bio">{{ trainer.content }}</p>
+ -->
+<!-- 
+<div class="quote">
+<p>“{{ trainer.testimonial }}”</p>
+<div class="pointer-border"></div>
+<div class="pointer"></div>
+</div>
+<div class="author">
+<strong>{{ trainer.testimonial_author }}</strong> -->
+<!-- {% endfor %} -->
