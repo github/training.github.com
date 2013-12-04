@@ -23,7 +23,7 @@ $ script/server
 If you want to pass arguments into `script/server` like `--watch` to do auto-file regeneration
 you can still do so by just passing in the arguments.
 
-Then entire site uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layouts, includes and other miscellany works, check out the [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki).
+The entire site uses [Jekyll](http://jekyllrb.com), so if you want to know how all the layouts, includes and other miscellany works, check out the [Jekyll Wiki](https://github.com/mojombo/jekyll/wiki).
 
 ## Materials Format
 
