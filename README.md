@@ -28,10 +28,3 @@ The entire site uses [Jekyll](http://jekyllrb.com), so if you want to know how a
 ## Materials Format
 
 The majority of the site materials are written in [Markdown](http://whatismarkdown.com), a [lightweight markup language](http://en.wikipedia.org/wiki/Lightweight_markup_language) supported in the GitHub web application user interface. There is a syntax guide to the original [Markdown format](http://daringfireball.net/projects/markdown/syntax) and also [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/).
-
-## Original Authors
-
-These materials were lovingly donated to the OSS community by [GitHub](https://github.com/about) because it is an awesome company that has a [passion for open sourcing](http://tom.preston-werner.com/2011/11/22/open-source-everything.html) a significant portion [of their work](https://github.com/github).  The original authors of these materials include [Matthew McCullough](http://github.com/matthewmccullough), [Tim Berglund](https://github.com/tlberglund), and [Brent Beer](https://github.com/brntbeer), and [Jordan McCullough](https://github.com/jordanmccullough).
-
-
-
