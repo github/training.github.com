@@ -7,3 +7,6 @@
 [submodule "presentations/dependencies/revealjs"]
 	path = presentations/dependencies/revealjs
 	url = https://github.com/hakimel/reveal.js.git
+[submodule "presentations/dependencies/snap-svg"]
+	path = presentations/dependencies/snap-svg
+	url = https://github.com/adobe-webplatform/Snap.svg.git
