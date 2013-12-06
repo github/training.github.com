@@ -1,7 +1,10 @@
 ---
 chapter: Remove & Move
 layout: slide
-tags: ['rm-mv','diagram']
+tags:
+- diagram
+- rm-mv
+- short-rm-mv
 ---
 
 <div class="diagram-group">

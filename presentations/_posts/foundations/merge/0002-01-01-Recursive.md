@@ -1,7 +1,10 @@
 ---
 chapter: Merge
 layout: slide
-tags: ['merge','diagram']
+tags:
+- diagram
+- merge
+- short-merge
 ---
 
 <div class="diagram-group">

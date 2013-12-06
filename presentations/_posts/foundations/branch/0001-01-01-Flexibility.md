@@ -1,7 +1,9 @@
 ---
 chapter: Branch
 layout: slide
-tags: ['branch']
+tags:
+- branch
+- short-branch
 ---
 
 * Branches are _cheap_
