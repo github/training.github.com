@@ -1,4 +1,3 @@
-exclude: [Gemfile, Gemfile.lock, Procfile, vendor, gems]
 gauges_id: 50235916613f5d4f9c000042
 google_analytics_id: UA-3769691-19
 
@@ -12,11 +11,20 @@ title: GitHub Training
 
 permalink: /articles/:title
 pygments: true
-exclude: ['Rakefile', 'config.rb', 'README.md','gems']
+exclude:
+- config.rb
+- Gemfile
+- Gemfile.lock
+- gems
+- Procfile
+- Rakefile
+- README.md
+- vendor
+
 markdown: rdiscount
 
 github:
-    username: github/training.github.com
+  username: github/training.github.com
 
 disqus:
-    id: githubteachingmaterials
+  id: githubteachingmaterials
