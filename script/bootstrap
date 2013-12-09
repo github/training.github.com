@@ -5,7 +5,6 @@ export CC=gcc
 
 echo "==> Installing gem dependencies…"
 
-mkdir -p vendor/gems
 bundle install --binstubs bin --path vendor/gems
 
 echo "==> Cloning into submodules"
