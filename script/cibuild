@@ -2,6 +2,4 @@
 
 set -e
 
-script/bootstrap
-
 bundle exec rake test
