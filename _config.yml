@@ -12,6 +12,7 @@ title: GitHub Training
 permalink: /articles/:title
 pygments: true
 exclude:
+- bin
 - config.rb
 - Gemfile
 - Gemfile.lock
@@ -19,6 +20,7 @@ exclude:
 - Procfile
 - Rakefile
 - README.md
+- script
 - vendor
 
 markdown: rdiscount
