@@ -4,6 +4,7 @@ title: Template Class Notes Title
 description: Sample description of event
 eventdate: 2013-12-12
 tags: [notes]
+course: foundations
 teacher:
 - teachers/matthewmccullough
 - teachers/timberglund
