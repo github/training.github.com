@@ -1,0 +1,14 @@
+---
+layout: bare
+---
+
+<h2>Teachers</h2>
+
+<ul>
+  {% for person in page.teacher %}
+    <li>{% include {{person}} %}</li>
+  {% endfor %}
+</ul>
+
+
+{{ content }}
