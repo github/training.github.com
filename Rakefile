@@ -1,29 +1,9 @@
-# Kris Brown
-# https://raw.github.com/krisb/jekyll-template/
-
 task :default => :server
 
 desc 'Clean up generated site'
 task :clean do
-  cleanup
+  sh 'rm -rf _site'
 end
-
-desc 'Build site with Jekyll'
-task :build => :clean do
-#  compass
-  jekyll
-end
-
-desc 'Start server with --auto'
-task :server => :clean do
-#  compass
-  jekyll('--server --auto')
-end
-
-#desc 'Build and deploy'
-#task :deploy => :build do
-#  sh 'rsync -rtzh --progress --delete _site/ username@servername:/var/www/websitename/'
-#end
 
 desc 'Check links for site already running on localhost:4000'
 task :check_links do
@@ -53,16 +33,4 @@ task :check_links do
   rescue LoadError
     abort 'Install anemone gem: gem install anemone'
   end
-end
-
-def cleanup
-  sh 'rm -rf _site'
-end
-
-def jekyll(opts = '')
-  sh 'jekyll ' + opts
-end
-
-def compass(opts = '')
-  # sh 'compass compile -c config.rb --force ' + opts
 end
