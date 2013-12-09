@@ -10,4 +10,4 @@ task :test do
   HTML::Proofer.new("./_site").run
 end
 
-task :default => :test
+task default: :test
