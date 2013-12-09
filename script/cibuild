@@ -4,4 +4,4 @@ set -e
 
 script/bootstrap
 
-bundle exec jekyll build
+bundle exec rake test
