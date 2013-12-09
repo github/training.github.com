@@ -6,7 +6,6 @@ task :clean do
 end
 
 task :test do
-  sh 'script/bootstrap'
   sh 'bundle exec jekyll build'
   HTML::Proofer.new("./_site").run
 end
