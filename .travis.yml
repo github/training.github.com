@@ -1,9 +1,8 @@
 language: ruby
 rvm:
   - 2.0.0
-script: bundle exec jekyll build
-
-install: bundle install
+install: script/bootstrap
+script: script/cibuild
 
 # whitelist
 branches:
@@ -12,5 +11,3 @@ branches:
 
 notifications:
   email: trainingteam@github.com
-
-
