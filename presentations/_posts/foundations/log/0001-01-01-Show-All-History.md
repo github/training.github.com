@@ -1,7 +1,9 @@
 ---
 chapter: Log
 layout: slide
-tags: ['log']
+tags:
+- log
+- short-log
 ---
 
 	git log

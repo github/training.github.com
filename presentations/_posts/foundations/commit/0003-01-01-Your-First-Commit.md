@@ -1,7 +1,9 @@
 ---
 chapter: Commit
 layout: slide
-tags: ['commit']
+tags:
+- commit
+- short-commit
 ---
 
 	git add <filename>

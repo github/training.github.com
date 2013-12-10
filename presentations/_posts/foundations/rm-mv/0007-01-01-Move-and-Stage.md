@@ -1,7 +1,9 @@
 ---
 chapter: Remove & Move
 layout: slide
-tags: ['rm-mv']
+tags:
+- rm-mv
+- short-rm-mv
 ---
 
 	$ git mv <FILENAME> <NEWFILENAME>

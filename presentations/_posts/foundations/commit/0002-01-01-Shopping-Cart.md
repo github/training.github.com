@@ -1,7 +1,9 @@
 ---
 chapter: Commit
 layout: slide
-tags: ['commit']
+tags:
+- commit
+- short-commit
 ---
 
 * Put things in _(stage)_
@@ -12,7 +14,7 @@ tags: ['commit']
 {% capture notes %}
 # Shopping Cart
 * put things in
-* take things out 
+* take things out
 * purchase at register
 {% endcapture %}
 {% include hydeslides/core/notes %}
