@@ -3,13 +3,7 @@ layout: bare
 ---
 
 
-<p>Class delivered on <span id="dateLong"></span></p>
-
-<script src="/js/moment.min.js"></script>
-<script>
-  var dateLong = moment("{{ page.eventdate }}", 'YYYY-MM-DD', true).format('MMMM Do YYYY');
-  document.getElementById("dateLong").innerHTML = dateLong;
-</script>
+<p>Class delivered on {{ page.eventdate | date: "%B %d %Y" }}</p>
 
 <h2>Teachers</h2>
 
