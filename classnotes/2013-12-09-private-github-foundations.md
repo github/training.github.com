@@ -10,6 +10,557 @@ teachers:
 - teachers/matthewmccullough
 ---
 
+## Command Line History
+
+Dec 9th
+
+```
+git --version
+git config --global user.name 
+git config --global user.name "GitHub Student"
+git config --global --replace-all user.name "GitHub Student"
+git config --global user.email
+git config --global --replace-all  user.email "training+githubstudents@github.com"
+git config --list
+git config --system user.email "brentbeer@github.com"
+git config --list
+cat ~/.gitconfig 
+git config --global color.ui
+git config --global color.ui auto
+git config --global core.autocrlf
+git init newproject
+cd newproject/
+ls
+ls -a
+git status
+ls .git/
+cat .git/config
+cat .git/HEAD
+cat .git/refs/heads/master
+git status
+touch first.txt
+vim first.txt
+git status
+git add first.txt
+git status
+git commit
+cat .git/HEAD
+cat .git/refs/heads/master
+git status
+vim first.txt 
+git status
+git help commit
+git commit -am "My ocd kicked in, needed a capital T"
+vim first.txt 
+git status
+git diff
+git add first.txt
+git status
+git diff
+git diff --staged
+vim first.txt
+git status
+git diff --staged
+git diff
+git diff HEAD
+cat .git/refs/heads/master
+git diff 46a11e3
+git diff --color-words
+git diff --staged --color-words
+git diff --staged --word-diff
+git diff --staged --stat
+git status
+git add first.txt
+git status
+git commit -am "added last line, and shorter number references"
+git log
+git log --format=email
+git log --stat
+git log --patch
+git log -p
+git log -p --format=email
+git log --format=raw
+git log -1 -p
+git log -1 -p --word-diff
+git log -1 -p --color-words
+git log --graph
+cd ../git/
+ls
+git log
+git log --author=Jeff
+git log --oneline --graph --decorate --all --no-merges
+git log --oneline --graph --decorate --all
+cd ../newproject/
+touch welcome.md
+vim welcome.md 
+git status
+git add welcome.md
+git commit -m'welcome to the freezing zone'
+git status
+git rm welcome.md
+git status
+git commit -m "no longer needing a welcome"
+ls
+mkdir travel
+touch travel/sanfrancisco.md
+touch travel/personal.md
+vim travel/personal.md 
+git status
+git status -b
+git status -s
+git help status
+git status -u
+cd travel/
+git status
+ls
+cd ..
+git add .
+git status
+git commit -m "adding travel plans"
+git rm --cached -- travel/personal.md
+git status
+git commit -m "no longer tracking personal travel"
+git status
+ls travel/
+mkdir travel/north_america
+git mv travel/sanfrancisco.md travel/north_america/
+git status
+touch travel/new-york.md
+git add travel/new-york.md
+git status
+git commit -m "created NORTH AMERICA, and new york"
+git status
+open
+open .
+vim travel/new-york.md 
+git status
+git commit -am "new york plans"
+git status
+vim travel/new-york.md 
+git status
+git add -A travel/north_america/
+git status
+git rm travel/new-york.md
+git commit -m "moved newyork into NORTH AMERICA"
+git log -1 -M20
+git log -1 -M20 -p
+git log -1 -M20 --stat
+git log -1 --stat
+vim travel/north_america/new-york.md 
+git mv travel/north_america/new-york.md travel/
+git status
+git add travel/new-york.md
+git status
+git commit -m "dropping it back into generic travel"
+git log -1 --stat
+git log -1 --stat -M
+git log -1 --stat -M73
+
+git log --stat -M50
+git log --stat -M20
+git status
+echo "See everyone at 10:35 PST"
+ls
+git log -1 -p
+git log -1 --stat
+git log -1 --stat -M
+git status
+ls travel
+git status
+touch .gitignore
+vim .gitignore 
+git status
+vim .gitignore 
+git status
+touch .env
+git status
+ls -a
+git add .gitignore
+git status
+git commit -m "do not track personal plans, or env file"
+mkdir secret_plans
+git status
+touch secret_plans/europe.md
+git status -u
+vim .gitignore 
+git status
+git commit -am "please dont watch my secret plans"
+cat .gitignore 
+touch travel/.gitignore
+ls -a
+vim .gitignore 
+touch my_ideas.secret
+git status
+git commit -am "ignore .secret files"
+vim travel/travel_secrets.secret
+vim travel/.gitignore 
+ls travel/
+vim travel/.gitignore 
+git status
+git add -A .
+git status
+git commit -m "share secret travel plans"
+git status
+vim .gitignore 
+mkdir dir1
+cd dir1/
+generaterandomfiles 5 special txt
+git status -u
+touch importantFile.txt
+vim importantFile.txt 
+git status -u
+cd ..
+vim .gitignore
+git status -u
+vim .gitignore
+git status -u
+git add dir1/
+git status
+git add .gitignore
+git diff --staged
+git commit -m "ignore all dir1 except 1 file"
+git status
+git config core.excludesfile
+cat /opt/boxen/config/git/gitignore
+cat .git/HEAD
+cat .git/refs/heads/master
+git log -1
+git log -1 --decorate
+git branch
+git branch test1
+git branch
+git log -1 --decorate
+ls .git/refs/heads
+git log -2 --oneline --decorate
+git branch test-old 0511192
+git log -2 --oneline --decorate
+du -sh .git/refs/heads/test-old 
+du -sh .git/refs/heads/master 
+git branch -d test-old 
+vim first.txt 
+git status
+git checkout HEAD -- first.txt
+git status
+git checkout -b test-second-feature
+cat .git/HEAD
+git status
+git branch
+ls
+vim README.md
+git status
+git add .
+git status
+git diff --staged
+vim README.md 
+git add README.md
+git commit -m "README to explain what this is"
+git status
+git checkout master
+git log --oneline --decorate --all --graph
+git branch
+git branch -m test-second-feature readme-creation-repo-explanation
+git log --oneline --decorate --all --graph
+git checkout master
+git merge readme-creation-repo-explanation
+git log --oneline --decorate --all --graph
+git branch -d test1 
+git branch -d readme-creation-repo-explanation 
+git branch
+git checkout -b startup-scripts
+mkdir scripts
+touch scripts/setup
+vim scripts/setup 
+chmod 755 scripts/setup 
+git status
+git status -u
+scripts/setup 
+git status
+git add .
+git commit -m "create setup script"
+git status
+vim scripts/setup 
+scripts/setup 
+vim scripts/
+scripts/setup 
+git status
+ls 
+ls -a
+git commit -am "use proper shell command"
+git status
+git log --oneline --decorate --graph
+git checkout master
+vim README.md 
+git status
+git commit -am "added note to readme to see scripts"
+git status
+git log --oneline --decorate --graph
+git log --oneline --decorate --graph --all
+git merge startup-scripts -m'pull in startup-scripts'
+git log --oneline --decorate --graph --all
+git log --format=raw -2
+git log --format=fuller -2
+git log --format=fuller -3
+git status
+git branch
+git branch -d startup-scripts 
+git checkout -b conflict-generator
+ls
+vim scripts/setup
+git status
+git diff
+git commit -m "create .env.example and populate it with some info"
+git commit -am "create .env.example and populate it with some info"
+git status
+scripts/setup
+which bash
+vim scripts/setup
+git commit -am "bin bash not usr bin bash"
+checkout master
+git checkout master
+vim scripts/setup 
+git commit -am "using ohmyzsh for the superior shell"
+git status
+git log --oneline --decorate --graph --all
+git log --oneline --decorate --graph --all -10
+git merge conflict-generator
+git status
+git diff
+vim scripts/setup
+git status
+git add scripts/
+git status
+git commit
+git log --oneline --decorate --graph --all
+git log --oneline --decorate --graph --all -10
+git show c09660a
+git branch -d conflict-generator 
+git checkout -b new-conflict
+vim README.md
+git commit -am "added brntbeer as author"
+git checkout master
+vim README.md
+git status
+git commit -am "link to brntbeer's twitter as author"
+git lol -10
+git merge new-conflict 
+git status
+git diff
+git merge --abort
+git status
+git lol -10
+git log new-conflict -1
+git remote add origin https://github.com/githubstudent/newproject.git
+git remote -v
+git push -u origin master
+git branch
+git checkout new-conflict 
+git push -u origin new-conflict
+git checkout master
+git checkout -b contribution-guidelines
+touch CONTRIBUTING.md
+git status
+git add .
+git commit -am "blank file to start contribution guidelines"
+git push -u origin contribution-guidelines 
+git status
+vim CONTRIBUTING.md 
+git status
+git commit -am "steps for contributing"
+git push origin contribution-guidelines 
+git config --local credential.helper cache
+vim README.md 
+git status
+git push origin contribution-guidelines
+git commit -am "readme to point to contributing steps"
+git push origin contribution-guidelines
+vim CONTRIBUTING.md 
+git status
+git commit -am "don't forget to clone"
+git push origin contribution-guidelines
+git status
+git checkout master
+cat README.md
+ls
+git fetch
+git status
+git merge origin/master
+git status
+git branch
+```
+
+Dec 10th
+
+```
+echo 'Welcome Back!'
+git status
+git fetch
+git branch
+git branch -r
+git status
+git pull
+git log -1
+git log -2
+git config user.nae
+git config user.name
+git status
+git checkout -b contributing-feature
+vim CONTRIBUTING.md 
+git status
+git diff --color-words
+git add .
+git commit -m "friendlier and more explicit contributing guidelines"
+git push -u origin contributing-feature
+git branch -r
+git fetch --prune origin
+git branch
+git checkout master
+git status
+git pull
+git checkout test-branch
+git status
+git checkout master
+git pull
+git checkout test-branch
+git merge origin/test-branch 
+vim .git/config 
+vim .git/config 
+cd ..
+git clone https://github.com/githubstudent/example-basic
+git log -1
+cd example-basic/
+git log -1
+git remote -v
+git branch githubstudent-welcome
+git log -1 --decorate
+cat .git/refs/heads/githubstudent-welcome 
+git checkout githubstudent-welcome 
+cat .git/HEAD
+vim githubstudent.md
+git status
+git add githubstudent.md
+git diff --staged
+git commit -m 'my welcome feature with a welcome markdown file'
+git status
+git push -u origin githubstudent-welcome
+git remote -v
+git branch -a
+git push -u origin githubstudent-welcome
+git remote -v
+git remote set-url origin http://github.com/githubstudent/example-basic
+git status
+git remote -v
+git push -u origin githubstudent-welcome
+git remote add teacher https://github.com/githubteacher/example-basic.git
+git remote -b
+git remote -v
+git fetch teacher
+git branch -r
+git status
+git checkout master
+git checkout master
+git merge teacher/master
+git status
+git log --oneline origin/master..master
+git status
+git push origin master
+git fetch teacher
+git merge teacher/master
+git push origin master
+ls
+git branch githubstudent-improvements
+git checkout githubstudent
+git checkout githubstudent-improvements 
+vim githubstudent-brntbeer.md
+git diff
+git commit -am "not forking, just collaborating now"
+git push -u teacher githubstudent-improvements
+git remote -v
+git remote add teacher https://github.com/githubteacher/example-basic.git
+git fetch teacher master
+git branch -r
+git status
+git checkout master
+git branch -vvv
+vim .git/config
+git branch -vvv
+git branch master --set-upstream-to teacher/master
+git branch master --set-upstream-to origin/master
+git branch -vvv
+git pull teacher
+git status
+git log -1
+git log master..teacher/master
+git branch -vvv
+git branch master --set-upstream-to teacher/master
+git pull teacher
+ls
+git branch front-end-fixup
+git checkout front-end-fixup
+vim index.html
+open index.html
+vim index.html
+git status
+vim README.md 
+git status
+git add .
+git status
+git commit -am "added styling to body as well as pulling in css"
+git log -1 --stat
+git reset --soft HEAD
+git status
+git reset --soft HEAD^
+git status
+git commit -am "added styling to body as well as pulling in css"
+git log -1 --stat
+git reset HEAD~1
+git status
+git add css/
+git add index.html
+git status
+git commit -m "changes to the front-end"
+git status
+git commit -am "also some readme changes"
+git log --oneline --decorate -4
+git reset --hard 1cb8ed7
+git log --oneline --decorate -4
+git reflog -5
+git checkout master
+git reflog -5
+git checkout front-end-fixup 
+git checkout a35203b
+git log --oneline --decorate --graph --all -10
+git log --oneline --decorate --graph --all -5
+git checkout front-end-fixup 
+git reflog -10
+git lol -5
+git reset --hard a35203b
+git lol -5
+git reset --hard master
+git reset --hard a35203b
+git lol -5
+git checkout master
+generaterandomchanges 5 throwaway rb
+git lol -10
+git fetch teacher
+git status
+git reset --hard teacher/master
+git help gc
+git status
+git branch
+git checkout front-end-fixup 
+git tag
+git tag 0.1 -m "First release"
+git tag
+git lol -5
+git push -u teacher front-end-fixup 
+git push -u teacher front-end-fixup 1.0
+git push -u teacher front-end-fixup 0.1
+git tag -a -m "beta release" 0.1-beta
+git tag
+git lol -4
+git push teacher 0.1-beta
+```
+
 ## Chat History
 December 9
 
@@ -564,557 +1115,5 @@ Ray C.  cool, thank you! Good job!
 matthewmccullough  Amit Gosar: That makes our day. +1
 jason  thanks!
 matthewmccullough  We definitely give it our best. Looking forward to any other feedback for us to iterate on in making the class awesome.
-```
-
-
-## Command Line History
-
-Dec 9th
-
-```
-git --version
-git config --global user.name 
-git config --global user.name "GitHub Student"
-git config --global --replace-all user.name "GitHub Student"
-git config --global user.email
-git config --global --replace-all  user.email "training+githubstudents@github.com"
-git config --list
-git config --system user.email "brentbeer@github.com"
-git config --list
-cat ~/.gitconfig 
-git config --global color.ui
-git config --global color.ui auto
-git config --global core.autocrlf
-git init newproject
-cd newproject/
-ls
-ls -a
-git status
-ls .git/
-cat .git/config
-cat .git/HEAD
-cat .git/refs/heads/master
-git status
-touch first.txt
-vim first.txt
-git status
-git add first.txt
-git status
-git commit
-cat .git/HEAD
-cat .git/refs/heads/master
-git status
-vim first.txt 
-git status
-git help commit
-git commit -am "My ocd kicked in, needed a capital T"
-vim first.txt 
-git status
-git diff
-git add first.txt
-git status
-git diff
-git diff --staged
-vim first.txt
-git status
-git diff --staged
-git diff
-git diff HEAD
-cat .git/refs/heads/master
-git diff 46a11e3
-git diff --color-words
-git diff --staged --color-words
-git diff --staged --word-diff
-git diff --staged --stat
-git status
-git add first.txt
-git status
-git commit -am "added last line, and shorter number references"
-git log
-git log --format=email
-git log --stat
-git log --patch
-git log -p
-git log -p --format=email
-git log --format=raw
-git log -1 -p
-git log -1 -p --word-diff
-git log -1 -p --color-words
-git log --graph
-cd ../git/
-ls
-git log
-git log --author=Jeff
-git log --oneline --graph --decorate --all --no-merges
-git log --oneline --graph --decorate --all
-cd ../newproject/
-touch welcome.md
-vim welcome.md 
-git status
-git add welcome.md
-git commit -m'welcome to the freezing zone'
-git status
-git rm welcome.md
-git status
-git commit -m "no longer needing a welcome"
-ls
-mkdir travel
-touch travel/sanfrancisco.md
-touch travel/personal.md
-vim travel/personal.md 
-git status
-git status -b
-git status -s
-git help status
-git status -u
-cd travel/
-git status
-ls
-cd ..
-git add .
-git status
-git commit -m "adding travel plans"
-git rm --cached -- travel/personal.md
-git status
-git commit -m "no longer tracking personal travel"
-git status
-ls travel/
-mkdir travel/north_america
-git mv travel/sanfrancisco.md travel/north_america/
-git status
-touch travel/new-york.md
-git add travel/new-york.md
-git status
-git commit -m "created NORTH AMERICA, and new york"
-git status
-open
-open .
-vim travel/new-york.md 
-git status
-git commit -am "new york plans"
-git status
-vim travel/new-york.md 
-git status
-git add -A travel/north_america/
-git status
-git rm travel/new-york.md
-git commit -m "moved newyork into NORTH AMERICA"
-git log -1 -M20
-git log -1 -M20 -p
-git log -1 -M20 --stat
-git log -1 --stat
-vim travel/north_america/new-york.md 
-git mv travel/north_america/new-york.md travel/
-git status
-git add travel/new-york.md
-git status
-git commit -m "dropping it back into generic travel"
-git log -1 --stat
-git log -1 --stat -M
-git log -1 --stat -M73
-
-git log --stat -M50
-git log --stat -M20
-git status
-echo "See everyone at 10:35 PST"
-ls
-git log -1 -p
-git log -1 --stat
-git log -1 --stat -M
-git status
-ls travel
-git status
-touch .gitignore
-vim .gitignore 
-git status
-vim .gitignore 
-git status
-touch .env
-git status
-ls -a
-git add .gitignore
-git status
-git commit -m "do not track personal plans, or env file"
-mkdir secret_plans
-git status
-touch secret_plans/europe.md
-git status -u
-vim .gitignore 
-git status
-git commit -am "please dont watch my secret plans"
-cat .gitignore 
-touch travel/.gitignore
-ls -a
-vim .gitignore 
-touch my_ideas.secret
-git status
-git commit -am "ignore .secret files"
-vim travel/travel_secrets.secret
-vim travel/.gitignore 
-ls travel/
-vim travel/.gitignore 
-git status
-git add -A .
-git status
-git commit -m "share secret travel plans"
-git status
-vim .gitignore 
-mkdir dir1
-cd dir1/
-generaterandomfiles 5 special txt
-git status -u
-touch importantFile.txt
-vim importantFile.txt 
-git status -u
-cd ..
-vim .gitignore
-git status -u
-vim .gitignore
-git status -u
-git add dir1/
-git status
-git add .gitignore
-git diff --staged
-git commit -m "ignore all dir1 except 1 file"
-git status
-git config core.excludesfile
-cat /opt/boxen/config/git/gitignore
-cat .git/HEAD
-cat .git/refs/heads/master
-git log -1
-git log -1 --decorate
-git branch
-git branch test1
-git branch
-git log -1 --decorate
-ls .git/refs/heads
-git log -2 --oneline --decorate
-git branch test-old 0511192
-git log -2 --oneline --decorate
-du -sh .git/refs/heads/test-old 
-du -sh .git/refs/heads/master 
-git branch -d test-old 
-vim first.txt 
-git status
-git checkout HEAD -- first.txt
-git status
-git checkout -b test-second-feature
-cat .git/HEAD
-git status
-git branch
-ls
-vim README.md
-git status
-git add .
-git status
-git diff --staged
-vim README.md 
-git add README.md
-git commit -m "README to explain what this is"
-git status
-git checkout master
-git log --oneline --decorate --all --graph
-git branch
-git branch -m test-second-feature readme-creation-repo-explanation
-git log --oneline --decorate --all --graph
-git checkout master
-git merge readme-creation-repo-explanation
-git log --oneline --decorate --all --graph
-git branch -d test1 
-git branch -d readme-creation-repo-explanation 
-git branch
-git checkout -b startup-scripts
-mkdir scripts
-touch scripts/setup
-vim scripts/setup 
-chmod 755 scripts/setup 
-git status
-git status -u
-scripts/setup 
-git status
-git add .
-git commit -m "create setup script"
-git status
-vim scripts/setup 
-scripts/setup 
-vim scripts/
-scripts/setup 
-git status
-ls 
-ls -a
-git commit -am "use proper shell command"
-git status
-git log --oneline --decorate --graph
-git checkout master
-vim README.md 
-git status
-git commit -am "added note to readme to see scripts"
-git status
-git log --oneline --decorate --graph
-git log --oneline --decorate --graph --all
-git merge startup-scripts -m'pull in startup-scripts'
-git log --oneline --decorate --graph --all
-git log --format=raw -2
-git log --format=fuller -2
-git log --format=fuller -3
-git status
-git branch
-git branch -d startup-scripts 
-git checkout -b conflict-generator
-ls
-vim scripts/setup
-git status
-git diff
-git commit -m "create .env.example and populate it with some info"
-git commit -am "create .env.example and populate it with some info"
-git status
-scripts/setup
-which bash
-vim scripts/setup
-git commit -am "bin bash not usr bin bash"
-checkout master
-git checkout master
-vim scripts/setup 
-git commit -am "using ohmyzsh for the superior shell"
-git status
-git log --oneline --decorate --graph --all
-git log --oneline --decorate --graph --all -10
-git merge conflict-generator
-git status
-git diff
-vim scripts/setup
-git status
-git add scripts/
-git status
-git commit
-git log --oneline --decorate --graph --all
-git log --oneline --decorate --graph --all -10
-git show c09660a
-git branch -d conflict-generator 
-git checkout -b new-conflict
-vim README.md
-git commit -am "added brntbeer as author"
-git checkout master
-vim README.md
-git status
-git commit -am "link to brntbeer's twitter as author"
-git lol -10
-git merge new-conflict 
-git status
-git diff
-git merge --abort
-git status
-git lol -10
-git log new-conflict -1
-git remote add origin https://github.com/githubstudent/newproject.git
-git remote -v
-git push -u origin master
-git branch
-git checkout new-conflict 
-git push -u origin new-conflict
-git checkout master
-git checkout -b contribution-guidelines
-touch CONTRIBUTING.md
-git status
-git add .
-git commit -am "blank file to start contribution guidelines"
-git push -u origin contribution-guidelines 
-git status
-vim CONTRIBUTING.md 
-git status
-git commit -am "steps for contributing"
-git push origin contribution-guidelines 
-git config --local credential.helper cache
-vim README.md 
-git status
-git push origin contribution-guidelines
-git commit -am "readme to point to contributing steps"
-git push origin contribution-guidelines
-vim CONTRIBUTING.md 
-git status
-git commit -am "don't forget to clone"
-git push origin contribution-guidelines
-git status
-git checkout master
-cat README.md
-ls
-git fetch
-git status
-git merge origin/master
-git status
-git branch
-```
-
-Dec 10th
-
-```
-echo 'Welcome Back!'
-git status
-git fetch
-git branch
-git branch -r
-git status
-git pull
-git log -1
-git log -2
-git config user.nae
-git config user.name
-git status
-git checkout -b contributing-feature
-vim CONTRIBUTING.md 
-git status
-git diff --color-words
-git add .
-git commit -m "friendlier and more explicit contributing guidelines"
-git push -u origin contributing-feature
-git branch -r
-git fetch --prune origin
-git branch
-git checkout master
-git status
-git pull
-git checkout test-branch
-git status
-git checkout master
-git pull
-git checkout test-branch
-git merge origin/test-branch 
-vim .git/config 
-vim .git/config 
-cd ..
-git clone https://github.com/githubstudent/example-basic
-git log -1
-cd example-basic/
-git log -1
-git remote -v
-git branch githubstudent-welcome
-git log -1 --decorate
-cat .git/refs/heads/githubstudent-welcome 
-git checkout githubstudent-welcome 
-cat .git/HEAD
-vim githubstudent.md
-git status
-git add githubstudent.md
-git diff --staged
-git commit -m 'my welcome feature with a welcome markdown file'
-git status
-git push -u origin githubstudent-welcome
-git remote -v
-git branch -a
-git push -u origin githubstudent-welcome
-git remote -v
-git remote set-url origin http://github.com/githubstudent/example-basic
-git status
-git remote -v
-git push -u origin githubstudent-welcome
-git remote add teacher https://github.com/githubteacher/example-basic.git
-git remote -b
-git remote -v
-git fetch teacher
-git branch -r
-git status
-git checkout master
-git checkout master
-git merge teacher/master
-git status
-git log --oneline origin/master..master
-git status
-git push origin master
-git fetch teacher
-git merge teacher/master
-git push origin master
-ls
-git branch githubstudent-improvements
-git checkout githubstudent
-git checkout githubstudent-improvements 
-vim githubstudent-brntbeer.md
-git diff
-git commit -am "not forking, just collaborating now"
-git push -u teacher githubstudent-improvements
-git remote -v
-git remote add teacher https://github.com/githubteacher/example-basic.git
-git fetch teacher master
-git branch -r
-git status
-git checkout master
-git branch -vvv
-vim .git/config
-git branch -vvv
-git branch master --set-upstream-to teacher/master
-git branch master --set-upstream-to origin/master
-git branch -vvv
-git pull teacher
-git status
-git log -1
-git log master..teacher/master
-git branch -vvv
-git branch master --set-upstream-to teacher/master
-git pull teacher
-ls
-git branch front-end-fixup
-git checkout front-end-fixup
-vim index.html
-open index.html
-vim index.html
-git status
-vim README.md 
-git status
-git add .
-git status
-git commit -am "added styling to body as well as pulling in css"
-git log -1 --stat
-git reset --soft HEAD
-git status
-git reset --soft HEAD^
-git status
-git commit -am "added styling to body as well as pulling in css"
-git log -1 --stat
-git reset HEAD~1
-git status
-git add css/
-git add index.html
-git status
-git commit -m "changes to the front-end"
-git status
-git commit -am "also some readme changes"
-git log --oneline --decorate -4
-git reset --hard 1cb8ed7
-git log --oneline --decorate -4
-git reflog -5
-git checkout master
-git reflog -5
-git checkout front-end-fixup 
-git checkout a35203b
-git log --oneline --decorate --graph --all -10
-git log --oneline --decorate --graph --all -5
-git checkout front-end-fixup 
-git reflog -10
-git lol -5
-git reset --hard a35203b
-git lol -5
-git reset --hard master
-git reset --hard a35203b
-git lol -5
-git checkout master
-generaterandomchanges 5 throwaway rb
-git lol -10
-git fetch teacher
-git status
-git reset --hard teacher/master
-git help gc
-git status
-git branch
-git checkout front-end-fixup 
-git tag
-git tag 0.1 -m "First release"
-git tag
-git lol -5
-git push -u teacher front-end-fixup 
-git push -u teacher front-end-fixup 1.0
-git push -u teacher front-end-fixup 0.1
-git tag -a -m "beta release" 0.1-beta
-git tag
-git lol -4
-git push teacher 0.1-beta
 ```
 
