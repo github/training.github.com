@@ -394,6 +394,8 @@ teachers:
     git tag -a V0.8 31f0c45
     git push origin V0.8
     
+## Chat Transcript
+    
 ### Day 1
 
     Ron Hear you loud and clear.. Greetings
