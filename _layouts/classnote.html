@@ -1,0 +1,32 @@
+---
+layout: bare
+---
+
+
+<p>Class delivered on {{ page.eventdate | date: "%B %d %Y" }}</p>
+
+<h2>Teachers</h2>
+
+<ul>
+  {% for person in page.teachers %}
+    <li>{% include {{person}} %}</li>
+  {% endfor %}
+</ul>
+
+<h2>Installation</h2>
+{% include resources/installation %}
+
+<p><small>Minimum is 1.7.ANYTHING, but can have issues with HTTPS credential prompting. Best is 1.8.0 or higher</small></p>
+</ul>
+
+{% if page.course %}
+  <h2>Course Materials, Links</h2>
+  {% capture course_path %}{{"resources/materials/" | append: page.course}}{% endcapture %}
+  {% include {{course_path}} %}
+{% endif %}
+
+<h2>Suggested Books, Articles</h2>
+{% include resources/articles %}
+
+<!-- CLI Only -->
+{{ content }}
