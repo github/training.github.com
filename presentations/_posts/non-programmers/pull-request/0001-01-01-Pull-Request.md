@@ -5,4 +5,4 @@ layout: slide
 tags: ['pull-request-np']
 ---
 
-<div class="octicon octicon-git-pull-request"></div>
+<div class="title-icon octicon octicon-git-pull-request"></div>

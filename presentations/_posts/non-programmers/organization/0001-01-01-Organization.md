@@ -5,4 +5,4 @@ layout: slide
 tags: ['organization-np']
 ---
 
-<div class="octicon octicon-organization"></div>
+<div class="title-icon octicon octicon-organization"></div>

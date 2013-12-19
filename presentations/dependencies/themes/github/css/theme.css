@@ -219,3 +219,8 @@ h3 {
   display: block;
   opacity: 1;
   position: absolute; }
+
+/* Octicon Title Slide */
+.title-icon {
+  font-size: 300% !important;
+  opacity: .3; }

@@ -5,4 +5,4 @@ layout: slide
 tags: ['github-np']
 ---
 
-<div class="octicon octicon-comment-discussion"></div>
+<div class="title-icon octicon octicon-comment-discussion"></div>

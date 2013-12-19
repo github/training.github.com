@@ -6,4 +6,4 @@ title: GH-Pages
 tags: ['gh-pages-np']
 ---
 
-<div class="octicon octicon-code"></div>
+<div class="title-icon octicon octicon-code"></div>

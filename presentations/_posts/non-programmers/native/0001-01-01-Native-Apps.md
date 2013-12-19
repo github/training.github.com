@@ -6,4 +6,4 @@ layout: slide
 tags: ['native-np']
 ---
 
-<div class="octicon octicon-device-desktop"></div>
+<div class="title-icon octicon octicon-device-desktop"></div>

@@ -5,4 +5,4 @@ layout: slide
 tags: ['notification-np']
 ---
 
-<div class="octicon octicon-star"></div>
+<div class="title-icon octicon octicon-star"></div>
