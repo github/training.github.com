@@ -1,3 +1,5 @@
+@import url(../../../revealjs/css/reveal.css);
+/* Core */
 /* Overrides, Design, Theme */
 /* Override to resolve Font-Awesome and RevealJS styling on icon- */
 i[class^="icon-"] {
@@ -118,14 +120,6 @@ h2 {
 h3 {
   line-height: 1.5em !important; }
 
-.no-stretch {
-  margin-top: -7em !important;
-  max-height: none !important;
-  max-width: none !important;
-  width: 3em !important;
-  height: 3em !important;
-  opacity: .25; }
-
 /* Branding & Logos */
 .brand {
   background: url(../branding/github-black.png) no-repeat center;
@@ -216,19 +210,3 @@ h3 {
   display: block;
   opacity: 1;
   position: absolute; }
-
-.slide {
-  background: none;
-  border: none;
-  box-shadow: none;
-  height: auto;
-  height: auto; }
-
-.notes {
-  visibility: hidden;
-  height: 0; }
-
-.fragment {
-  position: absolute;
-  left: 0;
-  top: 0; }
