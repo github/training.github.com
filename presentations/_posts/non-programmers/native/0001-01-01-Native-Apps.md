@@ -6,4 +6,4 @@ layout: slide
 tags: ['native-np']
 ---
 
-<img class="no-stretch" src="assets/octicons/device-desktop.png">
+<div class="octicon octicon-device-desktop"></div>
