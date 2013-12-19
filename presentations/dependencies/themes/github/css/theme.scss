@@ -1,8 +1,17 @@
-/* Core */
-@import "../../../revealjs/css/reveal.css";
-// @import "../../../revealjs/lib/css/zenburn.css";
+/*
+  Custom variant to avoid font-overrides
+  when using Octicons
+*/
+@import "revealjs.css";
 
-/* Overrides, Design, Theme */
+/*
+  Octicons
+*/
+@import "octicons.css";
+
+/*
+  Overrides, Design, Theme
+*/
 @import "_variables";
 @import "colors";
 @import "config";

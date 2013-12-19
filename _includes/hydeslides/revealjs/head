@@ -16,13 +16,9 @@
 <script src="../dependencies/revealjs/lib/js/html5shiv.js"></script>
 <![endif]-->
 
-<!--Core RevealJS and FontAwesome-->
-
 <!--GitHub Style-->
 {% if page.theme %}
 	{% assign theme = page.theme %}
 {% else %}
 	{% assign theme = "original" %}
 {% endif %}
-
-<link rel="stylesheet" href="dependencies/themes/github/css/octicons/octicons.css">

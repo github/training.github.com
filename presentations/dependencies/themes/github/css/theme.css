@@ -1,6 +1,15 @@
-@import url(../../../revealjs/css/reveal.css);
-/* Core */
-/* Overrides, Design, Theme */
+@import url(revealjs.css);
+@import url(octicons.css);
+/*
+  Custom variant to avoid font-overrides
+  when using Octicons
+*/
+/*
+  Octicons
+*/
+/*
+  Overrides, Design, Theme
+*/
 /* Override to resolve Font-Awesome and RevealJS styling on icon- */
 i[class^="icon-"] {
   font-family: FontAwesome;
