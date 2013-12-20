@@ -7,3 +7,6 @@
 [submodule "presentations/dependencies/revealjs"]
 	path = presentations/dependencies/revealjs
 	url = https://github.com/hakimel/reveal.js.git
+[submodule "materials"]
+	path = materials
+	url = https://github.com/github/training-materials
