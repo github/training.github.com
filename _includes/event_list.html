@@ -1,0 +1,23 @@
+<ul>
+  {% for class in events reversed %}
+  <li itemscope itemtype="http://schema.org/Event">
+    <h4 itemprop="name">{{ class.title }}</h4>
+    <span itemprop="location">{{ class.location }}</span>
+    <p itemprop="description">{{ class.content }}</p>
+    <span>{{ class.the_date }}</span>
+    <time itemprop="startDate" datetime="{{ class.the_date }}{{ class.start_time }}">{{ class.start_time }}</time>
+
+    {% if class.end_time %}
+      to
+      <span itemprop="endDate" datetime="{{ class.the_date }}{{ class.end_time }}">{{ class.end_time }}</span>
+    {% endif %}
+
+    {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
+
+    <a itemprop="url" href="{{ class.registration_url }}">Register for {{ class.cost }}</a>
+  </li>
+  {% endfor %}
+  {% if site.tags.web-foundations[0] == null %}
+  <p>There are no scheduled web-based foundation classes at this time. Stay tuned for updates!</p>
+  {% endif %}
+</ul>
