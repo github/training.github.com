@@ -1,5 +1,0 @@
-#!/bin/sh
-
-script/update
-
-bundle exec jekyll serve "$@"
