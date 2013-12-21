@@ -5,7 +5,7 @@
   background-size: contain;
   height: 6em;
   width: 98%;
-  margin: auto auto 1em auto; 
+  margin: auto auto 1em auto;
 }
 
 .git {
@@ -65,7 +65,7 @@
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
-  transform: rotate(-3deg); 
+  transform: rotate(-3deg);
   text-align: center;
 }
 
@@ -93,8 +93,8 @@
     left: 2.5%;
   }
   .reveal section .fragment.diagram:nth-child(n+2){
-    
-    
+
+
     transition: all 700ms;
     opacity: 0;
   }
@@ -103,3 +103,9 @@
     opacity: 1;
     position: absolute;
   }
+
+/* Octicon Title Slide */
+.title-icon{
+  font-size: 300% !important;
+  opacity: .3;
+}

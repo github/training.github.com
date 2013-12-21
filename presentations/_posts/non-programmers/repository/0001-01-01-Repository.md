@@ -5,4 +5,4 @@ layout: slide
 tags: ['repo-np']
 ---
 
-<img class="no-stretch" src="assets/octicons/repo.png">
+<div class="title-icon octicon octicon-repo"></div>

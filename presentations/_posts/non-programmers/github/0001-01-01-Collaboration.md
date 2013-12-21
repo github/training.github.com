@@ -5,4 +5,4 @@ layout: slide
 tags: ['github-np']
 ---
 
-<img class="no-stretch" src="assets/octicons/comment-discussion.png">
+<div class="title-icon octicon octicon-comment-discussion"></div>
