@@ -5,4 +5,4 @@ layout: slide
 tags: ['notification-np']
 ---
 
-<img class="no-stretch" src="assets/octicons/star.png">
+<div class="title-icon octicon octicon-star"></div>

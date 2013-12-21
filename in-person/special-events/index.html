@@ -23,15 +23,15 @@ subpage: special
           </div>
           <div class="details">
             <span class="date">
-              <img src="{{ site.url }}/img/icon-calendar.png" width="16px" height="16px" class="icon">
+              <img src="{{ site.url }}/img/icon-calendar.png" alt="Date" width="16px" height="16px" class="icon">
               {{ class.the_date }}
             </span>
             <span class="time">
-              <img src="{{ site.url }}/img/icon-location.png" width="16px" height="16px" class="icon">
+              <img src="{{ site.url }}/img/icon-location.png" alt="Location" width="16px" height="16px" class="icon">
               {{ class.location }}
             </span>
             <span class="time">
-              <img src="{{ site.url }}/img/icon-clock.png" width="16px" height="16px" class="icon">
+              <img src="{{ site.url }}/img/icon-clock.png" alt="Time" width="16px" height="16px" class="icon">
               {{ class.start_time }}
               {% if class.end_time %} to {{ class.end_time }}{% endif %}
               {% if class.timezone %}(<a href="{{ class.timezonelink }}">{{ class.timezone }}</a>){% endif %}
